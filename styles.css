@@ -43,11 +43,30 @@ body {
     margin: 15px;
 }
 
+#search-bar {
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+#search {
+    width: 50vw;
+}
+
 .logo { 
     object-fit: cover;
     object-position: 50% 15%;
     width: 45px;
-    image-rendering: crisp-edges;
+}
+
+img {
+    image-rendering: optimizeSpeed;             /* STOP SMOOTHING, GIVE ME SPEED  */
+    image-rendering: -moz-crisp-edges;          /* Firefox                        */
+    image-rendering: -o-crisp-edges;            /* Opera                          */
+    image-rendering: -webkit-optimize-contrast; /* Chrome (and eventually Safari) */
+    image-rendering: pixelated;                 /* Chrome                         */
+    image-rendering: optimize-contrast;         /* CSS3 Proposed                  */
+    -ms-interpolation-mode: nearest-neighbor;
 }
 
 #header a {
@@ -65,26 +84,29 @@ body {
     width: 100vw;
     height: 100vh;
     margin-top: var(--header);
-}
-
-#main p {
-    color: var(--darkback);
     padding: 25px;
     text-align: justify;
 }
 
-#search-bar {
-    padding-top: 25px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 5px;
-}
-
-#search {
-    width: 50vw;
-}
-
 button {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.button {
+    width: 200px;
+    height: 50px;
+    border: 1px solid var(--darkblck);
+    background: linear-gradient(var(--darkerback), var(--darkback));
+    color: var(--fontondark);
+    border-radius: 4px;
+    text-decoration: none;
+}
+
+.button:hover {
+    border: 1px solid var(--darkerback);
+}
+
+.button:active {
+    background-color: var(--fontondark);
+    color: var(--darkblck);
 }

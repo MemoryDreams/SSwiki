@@ -1,0 +1,33 @@
+@import url(styles.css);
+
+#foreword {
+    display: flex;
+    flex-direction: row;
+    width: 90vw;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+#foreword img {
+    height: 6em;
+    object-fit: fill;
+}
+
+p {
+    color: var(--darkblck);
+}
+
+.p-title {
+    padding-top: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.p-title p {
+    font-size: 36px;
+    font-family: inherit;
+}
+
+.p-content {
+    padding-top: 10px;
+}
