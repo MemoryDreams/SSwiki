@@ -1,0 +1,67 @@
+:root {
+    --logowidth: 50px;
+    --darkback: #141016;
+    --darkblck: #13032c;
+    --fontondark: #D2D7E0;
+    --lightback: #F0EAD6;
+    --darkerback: #e5dad6;
+    --header: 50px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#header {
+    background: linear-gradient(var(--darkback), var(--darkblck));
+    height: var(--header);
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 1px 1px 6px;
+} 
+
+#header * {
+    padding: 5px;
+}
+
+.left-side {
+    display: flex;
+    align-items: center;
+}
+
+.right-side {
+    margin: 15px;
+}
+
+.logo { 
+    object-fit: cover;
+    object-position: 50% 15%;
+    width: 45px;
+    image-rendering: crisp-edges;
+}
+
+#header a {
+    text-decoration: none;
+    color: var(--fontondark);
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bolder;
+}
+
+#main {
+    background-color: var(--lightback);
+    width: 100vw;
+    height: 100vh;
+    margin-top: var(--header);
+}
+
+#main p {
+    color: var(--darkback);
+    padding: 25px;
+    text-align: justify;
+}
