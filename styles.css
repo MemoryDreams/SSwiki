@@ -84,8 +84,9 @@ img {
 
 #main {
     background-color: var(--lightback);
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    min-height: 100vh;
+    height: 100%;
     margin-top: var(--header);
     padding: 25px;
     text-align: justify;

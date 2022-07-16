@@ -13,7 +13,7 @@
     object-fit: fill;
 }
 
-p {
+p, h3, h5 {
     color: var(--darkblck);
 }
 
@@ -29,13 +29,27 @@ p {
 }
 
 .p-content {
-    padding-top: 10px;
+    padding: 5px 0;
     width: 90vw;
     margin: auto;
 }
 
+.p-content div * {
+    padding: 5px 0;
+}
+
+.p-content p *{
+    padding: 0;
+}
+
+.p-title-img {
+    height: 35px;
+    width: 35px;
+    padding-right: 15px;
+}
+
 li {
-    margin-top: 10px;
+    margin: 5px 0;
 }
 
 .code-instaction {
@@ -54,4 +68,25 @@ li {
     font-family: monospace;
     background-color: var(--lighterblue);
     border-radius: 5px;
+}
+
+.move {
+    display: flex;
+    align-items: center;
+}
+
+.move img {
+    height: 100px;
+    width: 100px;
+    object-fit: contain;
+    padding: 20px;
+}
+
+.move img:hover {
+    height: unset;
+    width: unset;
+}
+
+.move div {
+    width: 90%;
 }
