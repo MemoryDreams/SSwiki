@@ -59,7 +59,7 @@ li {
     background-color: var(--lightblue);
 }
 
-.code-instaction * {
+.code-instaction p {
     padding: 15px;
     color: var(--lightback)
 }
