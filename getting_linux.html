@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Getting Started</title>
+    <link href="article.css" rel="stylesheet" type="text/css">
+    <link rel="icon" href="onyxlogo.png">
+</head>
+<body>
+    <div id="header">
+        <div class="left-side">
+            <img class="logo" src="./onyxlogo.png" alt="logo" />
+            <a href="index.html">Chaotic Onyx</a>
+        </div>
+        <form id="search-bar">
+            <input type="text" name="search" id="search">
+            <button name="search_btn">Search</button>
+        </form>
+        <div class="right-side">
+            <a href="https://ss13.ru/">Main</a>
+            <a href="https://community.ss13.ru">Hub</a>
+            <a href="https://forum.ss13.ru">Forum</a>
+        </div>
+    </div>
+    <div id="main">
+        <div class="p-title">
+            <p>Руководство по запуску <b>Byond</b> под <b>Linux</b> и <b>OS X</b>.</p>
+        </div>
+        <div class="p-content">
+            <h6 class="note">Если у вас операционная система симейства Windows, вам <a href="getting_started.html">сюда</a>.</h6>
+            <br>
+            <p>Начнём с того, что самый лучший способ запустить Byond на Linux или OS X это поднять виртуальную машину с Windows. Из-за особенностей работы Byond, почти невозможно заставить его на 100% правильно работать на другой операционной системе. Но если у вашей системы нет излишка ресурсов для запуска виртуальной машины, ниже будет руководство по запуску Byond через Wine.</p>
+            <div class="code-instaction">
+                <p>Для начала нужно установить утилиту Winetricks и создать префикс следующей командой:</p>
+                <p class="code">WINEARCH=win32 WINEPREFIX=~/.wine32 wineboot</p>
+                <p>Будущую директорию префикса можно назвать иначе, но главное — она не должна существовать до ввода команды. После устанавливаем нужные библиотеки:</p>
+                <p class="code">1. WINEARCH=win32 WINEPREFIX=~/.wine32 winetricks wsh56 wsh57 jscript mfc42 vcrun6
+                    <br>2. WINEARCH=win32 WINEPREFIX=~/.wine32 winetricks ie7
+                    <br>3. WINEARCH=win32 WINEPREFIX=~/.wine32 winetricks ie8</p>
+                <p>Также можно улучшить отображение текста, установив шрифты:</p>
+                <p class="code">WINEARCH=win32 WINEPREFIX=~/.wine32 winetricks allfonts</p>
+                <p>Далее идём на официальный сайт Byond и скачиваем установщик версии для Windows. Заходим в папку со скачанным файлом и устанавливаем программу следующей командой:</p>
+                <p class="code">WINEARCH=win32 WINEPREFIX=~/.wine32 wine версия_byond.exe</p>
+                <p>После завершения установки, можно запускать программу следующей командой:</p>
+                <p class="code">WINEARCH=win32 WINEPREFIX=~/.wine32 wine "C:\Program Files\BYOND\bin\byond.exe"</p>
+                <p>В случае возникновения проблем с отображением кириллицы в игре можете попробовать явно указать кодировку для запуска Wine:</p>
+                <p class="code">LC_ALL=ru_RU.cp1251 WINEARCH=win32 WINEPREFIX=~/.wine32 wine "C:\Program Files\BYOND\bin\byond.exe"</p>
+            </div>
+        </div>
+    </div>
