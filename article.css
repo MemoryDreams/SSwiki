@@ -50,6 +50,11 @@ p, h3, h5 {
 
 li {
     margin: 5px 0;
+    color: var(--darkblck)
+}
+
+hr {
+    margin-bottom: 30px;
 }
 
 .code-instaction {
@@ -75,14 +80,18 @@ li {
     align-items: center;
 }
 
-.move img {
+.move img, .shrink {
     height: 100px;
     width: 100px;
     object-fit: contain;
     padding: 20px;
 }
 
-.move img:hover {
+.shrink {
+    margin: auto;
+}
+
+.move img:hover, .shrink:hover {
     height: unset;
     width: unset;
 }
