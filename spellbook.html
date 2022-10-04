@@ -12,29 +12,61 @@
 <body>
     <div id="book">
         <div class="spell" id="bloodshard">
-            <div class="header">
-                <img class="icon" src="images/spells/bloodshard.png">
-                <div class="tabs">
-                    <button class="tab active" onclick="showTab('bloodshard', 'bloodshard-desc')">Desc</button>
-                    <button class="tab" onclick="showTab('bloodshard', 'bloodshard-perks')">Perks</button>
-                    <button class="tab" onclick="showTab('bloodshard', 'bloodshard-misc')">Misc</button>
+            <div>
+                <div class="header">
+                    <img class="icon" src="images/spells/bloodshard.png">
+                    <div class="tabs">
+                        <button class="tab active" onclick="showTab('bloodshard', 'bloodshard-desc')">Desc</button>
+                        <button class="tab" onclick="showTab('bloodshard', 'bloodshard-perks')">Perks</button>
+                        <button class="tab" onclick="showTab('bloodshard', 'bloodshard-misc')">Misc</button>
+                    </div>
+                </div>
+                <h3>Blood shard</h3>
+                <div id="bloodshard-desc" class="tabcontent desc">
+                    <p>Подобно осколочной гранате, маг выпускает кровавые осколки, жертвуя собственной кровью. Количество потерянной крови зависит от уровня прокачки. После использования, на секунду маг остаётся обездвиженным.</p>
+                </div>
+                <div id="bloodshard-perks" class="tabcontent perks">
+                    <p>Первое улучшение повышает урон, а сами осколки теперь нельзя заблокировать мечём или щитом. Второе улучшение ещё сильнее повышает урон, а так же при попадании в цель, возвращает магу две унции крови.</p>
+                </div>
+                <div id="bloodshard-misc" class="tabcontent misc">
+                    <div class="table">
+                        <p>Цена:</p><p>1</p>
+                        <p>Макс. улучшений:</p><p>3</p>
+                        <p>Макс. ул. скорости:</p><p>2</p>
+                        <p>Макс. ул. мощи:</p><p>2</p>
+                        <p>Перезарядка:</p><p>60 (↓0), 2 заряда</p>
+                        <p>Нужен костюм:</p><p сlass="no">нет</p>
+                    </div>
                 </div>
             </div>
-            <h3>Blood shard</h3>
-            <div id="bloodshard-desc" class="tabcontent desc">
-                <p>Подобно осколочной гранате, маг выпускает кровавые осколки, жертвуя собственной кровью. Количество потерянной крови зависит от уровня прокачки. После использования, на секунду маг остаётся обездвиженным.</p>
-            </div>
-            <div id="bloodshard-perks" class="tabcontent perks">
-                <p>Первое улучшение повышает урон, а сами осколки теперь нельзя заблокировать мечём или щитом. Второе улучшение ещё сильнее повышает урон, а так же при попадании в цель, возвращает магу две унции крови.</p>
-            </div>
-            <div id="bloodshard-misc" class="tabcontent misc">
-                <div class="table">
-                    <p>Цена:</p><p>1</p>
-                    <p>Макс. улучшений:</p><p>3</p>
-                    <p>Макс. ул. скорости:</p><p>2</p>
-                    <p>Макс. ул. мощи:</p><p>3</p>
-                    <p>Перезарядка:</p><p>60 (↓0), 2 заряда</p>
-                    <p>Нужен костюм:</p><p сlass="no">нет</p>
+            <div class="Warlock"><img src="images/spells/spellbooks/warlock.gif"></div>
+        </div>
+        <div class="spell" id="magicmissile">
+            <div>
+                <div class="header">
+                    <img class="icon" src="images/spells/magicmissile.png">
+                    <div class="tabs">
+                        <button class="tab active" onclick="showTab('magicmissile', 'magicmissile-desc')">Desc</button>
+                        <button class="tab" onclick="showTab('magicmissile', 'magicmissile-perks')">Perks</button>
+                        <button class="tab" onclick="showTab('magicmissile', 'magicmissile-misc')">Misc</button>
+                    </div>
+                </div>
+                <h3>Magic missile</h3>
+                <div id="magicmissile-desc" class="tabcontent desc">
+                    <p>Это заклинание призывает несколько маленьких шаров, состоящих из магической энергии, которые наносят немного урона, а также оглушают всех в зоне видимости.</p>
+                </div>
+                <div id="magicmissile-perks" class="tabcontent perks">
+                    <p>Увеличивает урон от заклинания на 5. На максимальном уровне вместо этого увеличивает длительность оглушения на две секунды.</p>
+                </div>
+                <div id="magicmissile-misc" class="tabcontent misc">
+                    <div class="table">
+                        <p>Цена:</p><p>1</p>
+                        <p>Макс. улучшений:</p><p>3</p>
+                        <p>Макс. ул. скорости:</p><p>2</p>
+                        <p>Макс. ул. мощи:</p><p>3</p>
+                        <p>Перезарядка:</p><p>15 (↓9)</p>
+                        <p>Нужен костюм:</p><p сlass="no">да</p>
+                    </div>
                 </div>
             </div>
             <div class="Warlock"><img src="images/spells/spellbooks/warlock.gif"></div>

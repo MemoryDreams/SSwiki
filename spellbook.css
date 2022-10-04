@@ -31,9 +31,9 @@ img {
     -ms-interpolation-mode: nearest-neighbor;   /* IE8+                           */
 }
 
-#spellbook {
-    width: 100%;
+#book {
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
     gap: 20px;
 }
@@ -44,6 +44,9 @@ img {
     background-color: var(--background1);
     padding: 0 10px;
     margin: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .spell h3, .tabcontent {
@@ -98,4 +101,8 @@ img {
 .table {
     display: grid;
     grid-template-columns: 1.7fr 1fr;
+}
+
+.class {
+    justify-self: flex-end;
 }
