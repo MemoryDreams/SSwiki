@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="spellbook.css">
+    <link rel="icon" href="onyxlogo.png">
+    <script src="spellbook.js"></script>
+    <title>Spellbook</title>
+</head>
+<body>
+    <div id="book">
+        <div class="spell" id="bloodshard">
+            <div class="header">
+                <img class="icon" src="images/spells/bloodshard.png">
+                <div class="tabs">
+                    <button class="tab active" onclick="showTab('bloodshard', 'bloodshard-desc')">Desc</button>
+                    <button class="tab" onclick="showTab('bloodshard', 'bloodshard-perks')">Perks</button>
+                    <button class="tab" onclick="showTab('bloodshard', 'bloodshard-misc')">Misc</button>
+                </div>
+            </div>
+            <h3>Blood shard</h3>
+            <div id="bloodshard-desc" class="tabcontent desc">
+                <p>Подобно осколочной гранате, маг выпускает кровавые осколки, жертвуя собственной кровью. Количество потерянной крови зависит от уровня прокачки. После использования, на секунду маг остаётся обездвиженным.</p>
+            </div>
+            <div id="bloodshard-perks" class="tabcontent perks">
+                <p>Первое улучшение повышает урон, а сами осколки теперь нельзя заблокировать мечём или щитом. Второе улучшение ещё сильнее повышает урон, а так же при попадании в цель, возвращает магу две унции крови.</p>
+            </div>
+            <div id="bloodshard-misc" class="tabcontent misc">
+                <div class="table">
+                    <p>Цена:</p><p>1</p>
+                    <p>Макс. улучшений:</p><p>3</p>
+                    <p>Макс. ул. скорости:</p><p>2</p>
+                    <p>Макс. ул. мощи:</p><p>3</p>
+                    <p>Перезарядка:</p><p>60 (мин. 0), 2 заряда</p>
+                    <p>Нужен костюм:</p><p сlass="no">нет</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

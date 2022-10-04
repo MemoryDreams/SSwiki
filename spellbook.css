@@ -1,0 +1,101 @@
+:root {
+    --background1: #0d0621;
+    --background2: #171032;
+    --background3: #1c1943;
+    --background4: #27226b;
+    --foreground1: #434aa6;
+    --foreground2: #5a66b3;
+    --font: #afb8dd;
+}
+
+*, ::before, ::after {
+    margin: 0;
+    font-family: 'Times New Roman', Helvetica, sans-serif;
+}
+
+p, h3, a, button {
+    color: var(--font);
+}
+
+body {
+    background: linear-gradient(90deg, var(--background2), var(--background3));
+}
+
+img {
+    image-rendering: optimizeSpeed;             /* STOP SMOOTHING, GIVE ME SPEED  */
+    image-rendering: -moz-crisp-edges;          /* Firefox                        */
+    image-rendering: -o-crisp-edges;            /* Opera                          */
+    image-rendering: -webkit-optimize-contrast; /* Chrome (and eventually Safari) */
+    image-rendering: pixelated;                 /* Chrome                         */
+    image-rendering: optimize-contrast;         /* CSS3 Proposed                  */
+    -ms-interpolation-mode: nearest-neighbor;   /* IE8+                           */
+}
+
+#spellbook {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.spell {
+    width: 250px;
+    height: 250px;
+    background-color: var(--background1);
+    padding: 0 10px;
+    margin: 30px;
+}
+
+.spell h3, .tabcontent {
+    padding: 5px;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.tabs {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    justify-content: flex-end;
+}
+
+.tab {
+    height: 100%;
+    width: 40px;
+    background-color: var(--background4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+}
+
+.tab:hover {
+    background-color: var(--foreground1);
+}
+
+.tab.active {
+    background-color: var(--foreground2);
+}
+
+.tabcontent {
+    text-align: justify;
+}
+
+.perks, .misc {
+    display: none;
+}
+
+.table {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
