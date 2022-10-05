@@ -185,16 +185,24 @@ img {
     background-color: var(--foreground2);
 }
 
-#hideall {
+#hidebuttons {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    align-items: center;
+}
+
+.hideAll {
     background-color: var(--background4);
+    width: 80px;
     border: none;
 }
 
-#hideall:hover {
+.hideAll:hover {
     background-color: var(--foreground1);
 }
 
-#hideall:active {
+.hideAll:active {
     background-color: var(--foreground2);
 }
 
@@ -212,12 +220,16 @@ img {
         height: 50px;
     }
 
+    .hideAll {
+        width: 50px;
+    }
+
     button p {
         font-size: 8px;
     }
 
     #onyx {
-        width: 80px;
-        height: 80px;
+        width: 60px;
+        height: 60px;
     }
   }

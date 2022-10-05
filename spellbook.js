@@ -75,7 +75,7 @@ function filterOut(book) {
   updateBook();
 }
 
-function switchAll() {
+function hideAll() {
   warlock = battlemage = standard = cleric = druid = spatial = false;
   document.getElementById('b-warlock').className = document.getElementById('b-warlock').className.replace("active", "");
   document.getElementById('b-battlemage').className = document.getElementById('b-battlemage').className.replace("active", "");
@@ -83,6 +83,18 @@ function switchAll() {
   document.getElementById('b-cleric').className = document.getElementById('b-cleric').className.replace("active", "");
   document.getElementById('b-druid').className = document.getElementById('b-druid').className.replace("active", "");
   document.getElementById('b-spatial').className = document.getElementById('b-spatial').className.replace("active", "");
+  updateBook();
+}
+
+function showAll() {
+  hideAll();
+  warlock = battlemage = standard = cleric = druid = spatial = true;
+  document.getElementById('b-warlock').className += "active";
+  document.getElementById('b-battlemage').className += "active";
+  document.getElementById('b-standard').className += "active";
+  document.getElementById('b-cleric').className += "active";
+  document.getElementById('b-druid').className += "active";
+  document.getElementById('b-spatial').className += "active";
   updateBook();
 }
 
