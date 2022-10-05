@@ -46,6 +46,7 @@ img {
     image-rendering: pixelated;                 /* Chrome                         */
     image-rendering: optimize-contrast;         /* CSS3 Proposed                  */
     -ms-interpolation-mode: nearest-neighbor;   /* IE8+                           */
+    pointer-events: none;
 }
 
 .icon {
@@ -170,7 +171,9 @@ img {
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
+    gap: 15px;
     width: 60%;
+    margin-bottom: 15px;
 }
 
 #buttons button {
@@ -178,7 +181,6 @@ img {
     border: none;
     width: 80px;
     height: 80px;
-    margin: 10px;
 }
 
 #buttons .active {
@@ -188,7 +190,7 @@ img {
 #hidebuttons {
     display: flex;
     flex-direction: column;
-    gap: 5px;
+    gap: 15px;
     align-items: center;
 }
 
@@ -196,6 +198,7 @@ img {
     background-color: var(--background4);
     width: 80px;
     border: none;
+    padding: 0;
 }
 
 .hideAll:hover {
@@ -208,20 +211,20 @@ img {
 
 @media screen and (max-width: 480px) {
     #book {
-        width: 80%;
+        width: 75%;
     }
 
     #filter {
-        width: 20vw;
+        width: 25vw;
     }
 
     #buttons button {
-        width: 50px;
-        height: 50px;
+        width: 60px;
+        height: 60px;
     }
 
     .hideAll {
-        width: 50px;
+        width: 55px;
     }
 
     button p {
