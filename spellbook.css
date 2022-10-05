@@ -176,12 +176,15 @@ img {
     background-color: var(--foreground2);
 }
 
-#logo {
+#hideall {
+    background-color: var(--background4);
     border: none;
-    background-color: transparent;
-    border-radius: 50%;
 }
 
-#logo:hover {
-    background-color: var(--background4);
+#hideall:hover {
+    background-color: var(--foreground1);
+}
+
+#hideall:active {
+    background-color: var(--foreground2);
 }

@@ -51,7 +51,7 @@
                         <button class="tab" onclick="showTab('magicmissile', 'magicmissile-misc')">Misc</button>
                     </div>
                 </div>
-                <h3>Magic missile</h3>
+                <h3>Magic Missile</h3>
                 <div id="magicmissile-desc" class="tabcontent desc">
                     <p>Это заклинание призывает несколько маленьких шаров, состоящих из магической энергии, которые наносят немного урона, а также оглушают всех в зоне видимости.</p>
                 </div>
@@ -1199,7 +1199,7 @@
                         <button class="tab" onclick="showTab('areaheal', 'areaheal-misc')">Misc</button>
                     </div>
                 </div>
-                <h3>Major Heal</h3>
+                <h3>Cure Area</h3>
                 <div id="areaheal-desc" class="tabcontent desc">
                     <p>
                         Лечит все в пределах действия заклинания.
@@ -1463,9 +1463,7 @@
         </div>
     </div>
     <div id="filter">
-        <button id="logo" onclick="switchAll()">
-            <img id="onyx" src="onyxlogo.png">
-        </button>
+        <img id="onyx" src="onyxlogo.png">
         <div id="buttons">
             <button id="b-standard" class="active" onclick="filterOut('standard')">
                 <img src="images/spells/spellbooks/standard.png">
@@ -1492,6 +1490,7 @@
                 <p>Battlemage</p>
             </button>
         </div>
+        <button id="hideall" onclick="switchAll()">Hide all</button>
     </div>
 </body>
 </html>
