@@ -27,6 +27,10 @@ p, h3, a, button {
     color: var(--font);
 }
 
+p {
+    font-size: 16px;
+}
+
 body {
     background: linear-gradient(90deg, var(--background1), var(--background2));
     display: flex;
@@ -188,3 +192,27 @@ img {
 #hideall:active {
     background-color: var(--foreground2);
 }
+
+@media screen and (max-width: 480px) {
+    #book {
+        width: 80%;
+    }
+
+    #filter {
+        width: 20vw;
+    }
+
+    #buttons button {
+        width: 50px;
+        height: 50px;
+    }
+
+    button p {
+        font-size: 8px;
+    }
+
+    #onyx {
+        width: 80px;
+        height: 80px;
+    }
+  }
