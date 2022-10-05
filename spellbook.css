@@ -155,6 +155,7 @@ img {
     -webkit-box-shadow: -15px 2px 30px 4px rgba(0,0,0,0.75);
     -moz-box-shadow: -15px 2px 30px 4px rgba(0,0,0,0.75);
     box-shadow: -15px 2px 30px 4px rgba(0,0,0,0.75);
+    overflow-y: auto;
 }
 
 #onyx {
