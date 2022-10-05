@@ -127,6 +127,7 @@ function updateBook() {
   for (i = 0; i < x.length; i++) {
     hideSpell(x[i]);
   }
+  console.log(i);
   for (i = 0; i < x.length; i++) {
     if ((contains(x[i], 'standard') && standard) || (contains(x[i], 'cleric') && cleric) || (contains(x[i], 'warlock') && warlock) || (contains(x[i], 'battlemage') && battlemage) || (contains(x[i], 'druid') && druid) || (contains(x[i], 'spatial') && spatial)) {
       showSpell(x[i]);

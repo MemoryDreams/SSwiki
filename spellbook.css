@@ -1,10 +1,10 @@
 :root {
-    --background1: #0d0621;
-    --background2: #171032;
-    --background3: #1c1943;
-    --background4: #27226b;
-    --foreground1: #434aa6;
-    --foreground2: #5a66b3;
+    --background1:rgb(16, 15, 30);
+    --background2:rgb(34, 32, 52);
+    --background3:rgb(59, 57, 80);
+    --background4:rgb(83, 81, 112);
+    --foreground1:rgb(104, 103, 135);
+    --foreground2:rgb(123, 120, 151);
     --no: #74bf85;
     --yes: #ff7485;
     --font: #afb8dd;
