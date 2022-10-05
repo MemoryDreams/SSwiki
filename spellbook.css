@@ -5,8 +5,8 @@
     --background4: #27226b;
     --foreground1: #434aa6;
     --foreground2: #5a66b3;
-    --yes: #74bf85;
-    --no: #ff7485;
+    --no: #74bf85;
+    --yes: #ff7485;
     --font: #afb8dd;
 }
 
@@ -44,14 +44,22 @@ img {
     -ms-interpolation-mode: nearest-neighbor;   /* IE8+                           */
 }
 
+.icon {
+    background-color: var(--foreground2);
+    border-radius: 50%;
+}
+
+::-webkit-scrollbar {
+  width: 0;
+}
+
 #book {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    width: 75%;
     justify-content: space-around;
     gap: 5px;
-    width: 75%;
-    height: 100%;
 }
 
 .spell {
@@ -106,7 +114,7 @@ img {
     background-color: var(--foreground1);
 }
 
-.tab .active {
+.tabs .active {
     background-color: var(--foreground2);
 }
 
@@ -166,4 +174,14 @@ img {
 
 #buttons .active {
     background-color: var(--foreground2);
+}
+
+#logo {
+    border: none;
+    background-color: transparent;
+    border-radius: 50%;
+}
+
+#logo:hover {
+    background-color: var(--background4);
 }

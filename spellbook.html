@@ -35,13 +35,13 @@
                         <p>Макс. ул. скорости:</p><p>2</p>
                         <p>Макс. ул. мощи:</p><p>2</p>
                         <p>Перезарядка:</p><p>60 (↓0), 2 заряда</p>
-                        <p>Нужен костюм:</p><p сlass="no">нет</p>
+                        <p>Нужен костюм:</p><p class="no">нет</p>
                     </div>
                 </div>
             </div>
-            <div class="Warlock"><img src="images/spells/spellbooks/warlock.gif"></div>
+            <div class="class"><img src="images/spells/spellbooks/warlock.gif"></div>
         </div>
-        <div class="spell warlock" id="magicmissile">
+        <div class="spell warlock spatial standard" id="magicmissile">
             <div>
                 <div class="header">
                     <img class="icon" src="images/spells/magicmissile.png">
@@ -65,11 +65,11 @@
                         <p>Макс. ул. скорости:</p><p>2</p>
                         <p>Макс. ул. мощи:</p><p>3</p>
                         <p>Перезарядка:</p><p>15 (↓9)</p>
-                        <p>Нужен костюм:</p><p сlass="yes">да</p>
+                        <p>Нужен костюм:</p><p class="yes">да</p>
                     </div>
                 </div>
             </div>
-            <div class="class"><img src="images/spells/spellbooks/warlock.gif"></div>
+            <div class="class"><img src="images/spells/spellbooks/warlock.gif"><img src="images/spells/spellbooks/spatial.gif"><img src="images/spells/spellbooks/standard.png"></div>
         </div>
         <div class="spell warlock standard" id="acidspray">
             <div>
@@ -95,7 +95,7 @@
                         <p>Макс. ул. скорости:</p><p>0</p>
                         <p>Макс. ул. мощи:</p><p>0</p>
                         <p>Перезарядка:</p><p>60</p>
-                        <p>Нужен костюм:</p><p сlass="no">нет</p>
+                        <p>Нужен костюм:</p><p class="no">нет</p>
                     </div>
                 </div>
             </div>
@@ -103,9 +103,1369 @@
                 <img src="images/spells/spellbooks/warlock.gif"><img src="images/spells/spellbooks/standard.png">
             </div>
         </div>
+        <div class="spell warlock standard" id="sliperysurface">
+            <div>
+                <div class="header">
+                    <img class="icon" src="images/spells/sliperysurface.png">
+                    <div class="tabs">
+                        <button class="tab active" onclick="showTab('sliperysurface', 'sliperysurface-desc')">Desc</button>
+                        <!-- <button class="tab" onclick="showTab('sliperysurface', 'sliperysurface-perks')">Perks</button> -->
+                        <button class="tab" onclick="showTab('sliperysurface', 'sliperysurface-misc')">Misc</button>
+                    </div>
+                </div>
+                <h3>Slippery Surface</h3>
+                <div id="sliperysurface-desc" class="tabcontent desc">
+                    <p>Скорее шутка, нежели практичная способность. Покрывает поверхность скользкой смазкой там, где вы захотите.</p>
+                </div>
+                <!-- <div id="sliperysurface-perks" class="tabcontent perks">
+                    <p></p>
+                </div> -->
+                <div id="sliperysurface-misc" class="tabcontent misc">
+                    <div class="table">
+                        <p>Цена:</p><p>1</p>
+                        <p>Макс. улучшений:</p><p>0</p>
+                        <p>Макс. ул. скорости:</p><p>0</p>
+                        <p>Макс. ул. мощи:</p><p>0</p>
+                        <!-- <p>Перезарядка:</p><p>N/A</p> -->
+                        <p>Нужен костюм:</p><p class="no">нет</p>
+                    </div>
+                </div>
+            </div>
+            <div class="class">
+                <img src="images/spells/spellbooks/warlock.gif"><img src="images/spells/spellbooks/standard.png">
+            </div>
+        </div>
+        <div class="spell warlock battlemage cleric standard" id="fireball">
+            <div>
+                <div class="header">
+                    <img class="icon" src="images/spells/fireball.png">
+                    <div class="tabs">
+                        <button class="tab active" onclick="showTab('fireball', 'fireball-desc')">Desc</button>
+                        <button class="tab" onclick="showTab('fireball', 'fireball-perks')">Perks</button>
+                        <button class="tab" onclick="showTab('fireball', 'fireball-misc')">Misc</button>
+                    </div>
+                </div>
+                <h3>Fireball</h3>
+                <div id="fireball-desc" class="tabcontent desc">
+                    <p>
+                        Запускает огненный шар в ту сторону, в которую вы смотрите. Он взрывается при контакте с целью, оглушая и ослепляя всех, кто оказался рядом. Также наносит повреждение оборудованию и обшивке станций.
+                    </p>
+                </div>
+                <div id="fireball-perks" class="tabcontent perks">
+                    <p>
+                        Увеличивает силу взрыва и радиус вспышки.
+                    </p>
+                </div>
+                <div id="fireball-misc" class="tabcontent misc">
+                    <div class="table">
+                        <p>Цена:</p><p>1</p>
+                        <p>Макс. улучшений:</p><p>5</p>
+                        <p>Макс. ул. скорости:</p><p>0</p>
+                        <p>Макс. ул. мощи:</p><p>5</p>
+                        <p>Перезарядка:</p><p>10</p>
+                        <p>Нужен костюм:</p><p class="no">нет</p>
+                    </div>
+                </div>
+            </div>
+            <div class="class"><img src="images/spells/spellbooks/warlock.gif"><img src="images/spells/spellbooks/battlemage.gif"><img src="images/spells/spellbooks/cleric.png"><img src="images/spells/spellbooks/standard.png"></div>
+        </div>
+        <div class="spell warlock battlemage standard" id="disint">
+            <div>
+                <div class="header">
+                    <img class="icon" src="images/spells/disint.png">
+                    <div class="tabs">
+                        <button class="tab active" onclick="showTab('disint', 'disint-desc')">Desc</button>
+                        <!-- <button class="tab" onclick="showTab('disint', 'disint-perks')">Perks</button> -->
+                        <button class="tab" onclick="showTab('disint', 'disint-misc')">Misc</button>
+                    </div>
+                </div>
+                <h3>Disintegrate (Ei'Nath!)</h3>
+                <div id="disint-desc" class="tabcontent desc">
+                    <p>
+                        Уничтожает выбранную вами цель. Вы можете выбрать даже себя!
+                    </p>
+                </div>
+                <!-- <div id="disint-perks" class="tabcontent perks">
+                    <p>
+                        Увеличивает силу взрыва и радиус вспышки.
+                    </p>
+                </div> -->
+                <div id="disint-misc" class="tabcontent misc">
+                    <div class="table">
+                        <p>Цена:</p><p>2</p>
+                        <p>Макс. улучшений:</p><p>2</p>
+                        <p>Макс. ул. скорости:</p><p>2</p>
+                        <p>Макс. ул. мощи:</p><p>0</p>
+                        <p>Перезарядка:</p><p>180 (↓90)</p>
+                        <p>Нужен костюм:</p><p class="yes">да</p>
+                    </div>
+                </div>
+            </div>
+            <div class="class"><img src="images/spells/spellbooks/warlock.gif"><img src="images/spells/spellbooks/battlemage.gif"><img src="images/spells/spellbooks/standard.png"></div>
+        </div>
+        <div class="spell warlock spatial standard" id="smoke">
+            <div>
+                <div class="header">
+                    <img class="icon" src="images/spells/smoke.png">
+                    <div class="tabs">
+                        <button class="tab active" onclick="showTab('smoke', 'smoke-desc')">Desc</button>
+                        <button class="tab" onclick="showTab('smoke', 'smoke-perks')">Perks</button>
+                        <button class="tab" onclick="showTab('smoke', 'smoke-misc')">Misc</button>
+                    </div>
+                </div>
+                <h3>Smoke</h3>
+                <div id="smoke-desc" class="tabcontent desc">
+                    <p>
+                        Создает облако дыма по вашей позиций. Эффективно в темноте.
+                    </p>
+                </div>
+                <div id="smoke-perks" class="tabcontent perks">
+                    <p>
+                        Увеличивает количество облаков дыма.
+                    </p>
+                </div>
+                <div id="smoke-misc" class="tabcontent misc">
+                    <div class="table">
+                        <p>Цена:</p><p>1</p>
+                        <p>Макс. улучшений:</p><p>3</p>
+                        <p>Макс. ул. скорости:</p><p>3</p>
+                        <p>Макс. ул. мощи:</p><p>2</p>
+                        <p>Перезарядка:</p><p>12 (↓2)</p>
+                        <p>Нужен костюм:</p><p class="no">нет</p>
+                    </div>
+                </div>
+            </div>
+            <div class="class"><img src="images/spells/spellbooks/warlock.gif"><img src="images/spells/spellbooks/spatial.gif"><img src="images/spells/spellbooks/standard.png"></div>
+        </div>
+        <div class="spell warlock druid spatial cleric standard" id="teleport">
+            <div>
+                <div class="header">
+                    <img class="icon" src="images/spells/teleport.png">
+                    <div class="tabs">
+                        <button class="tab active" onclick="showTab('teleport', 'teleport-desc')">Desc</button>
+                        <!-- <button class="tab" onclick="showTab('teleport', 'teleport-perks')">Perks</button> -->
+                        <button class="tab" onclick="showTab('teleport', 'teleport-misc')">Misc</button>
+                    </div>
+                </div>
+                <h3>Teleport</h3>
+                <div id="teleport-desc" class="tabcontent desc">
+                    <p>
+                        Перемещает в выбранное место.
+                    </p>
+                </div>
+                <!-- <div id="teleport-perks" class="tabcontent perks">
+                    <p>
+                        Увеличивает количество облаков дыма.
+                    </p>
+                </div> -->
+                <div id="teleport-misc" class="tabcontent misc">
+                    <div class="table">
+                        <p>Цена:</p><p>1</p>
+                        <p>Макс. улучшений:</p><p>4</p>
+                        <p>Макс. ул. скорости:</p><p>2</p>
+                        <p>Макс. ул. мощи:</p><p>0</p>
+                        <p>Перезарядка:</p><p>60 (↓20)</p>
+                        <p>Нужен костюм:</p><p class="yes">да</p>
+                    </div>
+                </div>
+            </div>
+            <div class="class"><img src="images/spells/spellbooks/warlock.gif"><img src="images/spells/spellbooks/druid.gif" ><img src="images/spells/spellbooks/spatial.gif"><img src="images/spells/spellbooks/cleric.png"></div>
+        </div>
+        <div class="spell warlock druid spatial battlemage standard" id="minorheal">
+            <div>
+                <div class="header">
+                    <img class="icon" src="images/spells/minorheal.png">
+                    <div class="tabs">
+                        <button class="tab active" onclick="showTab('minorheal', 'minorheal-desc')">Desc</button>
+                        <button class="tab" onclick="showTab('minorheal', 'minorheal-perks')">Perks</button>
+                        <button class="tab" onclick="showTab('minorheal', 'minorheal-misc')">Misc</button>
+                    </div>
+                </div>
+                <h3>Cure Light Wounds</h3>
+                <div id="minorheal-desc" class="tabcontent desc">
+                    <p>
+                        Заклинание, используемое волшебниками для лечения порезов от бумаги.
+                    </p>
+                </div>
+                <div id="minorheal-perks" class="tabcontent perks">
+                    <p>
+                        Усиливает лечебный потенциал заклинания.
+                    </p>
+                </div>
+                <div id="minorheal-misc" class="tabcontent misc">
+                    <div class="table">
+                        <p>Цена:</p><p>1</p>
+                        <p>Макс. улучшений:</p><p>2</p>
+                        <p>Макс. ул. скорости:</p><p>1</p>
+                        <p>Макс. ул. мощи:</p><p>2</p>
+                        <p>Перезарядка:</p><p>20 (↓15)</p>
+                        <p>Нужен костюм:</p><p class="no">нет</p>
+                    </div>
+                </div>
+            </div>
+            <div class="class"><img src="images/spells/spellbooks/warlock.gif"><img src="images/spells/spellbooks/druid.gif" ><img src="images/spells/spellbooks/spatial.gif"><img src="images/spells/spellbooks/battlemage.gif"><img src="images/spells/spellbooks/standard.png"></div>
+        </div>
+        <div class="spell warlock druid standard" id="hound">
+            <div>
+                <div class="header">
+                    <img class="icon" src="images/spells/hound.png">
+                    <div class="tabs">
+                        <button class="tab active" onclick="showTab('hound', 'hound-desc')">Desc</button>
+                        <!-- <button class="tab" onclick="showTab('hound', 'hound-perks')">Perks</button> -->
+                        <button class="tab" onclick="showTab('hound', 'hound-misc')">Misc</button>
+                    </div>
+                </div>
+                <h3>Faithful Hound</h3>
+                <div id="hound-desc" class="tabcontent desc">
+                    <p>
+                        Призывает спектрального сторожевого пса, который стоит на месте. Лает и кусает любого, кто не произнёс <i>пароль</i>.
+                    </p>
+                </div>
+                <!-- <div id="hound-perks" class="tabcontent perks">
+                    <p>
+                        Усиливает лечебный потенциал заклинания.
+                    </p>
+                </div> -->
+                <div id="hound-misc" class="tabcontent misc">
+                    <div class="table">
+                        <p>Цена:</p><p>1</p>
+                        <p>Макс. улучшений:</p><p>3</p>
+                        <p>Макс. ул. скорости:</p><p>3</p>
+                        <p>Макс. ул. мощи:</p><p>0</p>
+                        <p>Перезарядка:</p><p>60 (↓15)</p>
+                        <p>Нужен костюм:</p><p class="yes">да</p>
+                    </div>
+                </div>
+            </div>
+            <div class="class"><img src="images/spells/spellbooks/warlock.gif"><img src="images/spells/spellbooks/druid.gif" ><img src="images/spells/spellbooks/standard.png"></div>
+        </div>
+        <div class="spell warlock battlemage" id="currupt">
+            <div>
+                <div class="header">
+                    <img class="icon" src="images/spells/currupt.png">
+                    <div class="tabs">
+                        <button class="tab active" onclick="showTab('currupt', 'currupt-desc')">Desc</button>
+                        <button class="tab" onclick="showTab('currupt', 'currupt-perks')">Perks</button>
+                        <button class="tab" onclick="showTab('currupt', 'currupt-misc')">Misc</button>
+                    </div>
+                </div>
+                <h3>Corrupt Form</h3>
+                <div id="currupt-desc" class="tabcontent desc">
+                    <p>
+                        Это заклинание превращает мага в нечто ужасное на 15 секунд.
+                    </p>
+                </div>
+                <div id="currupt-perks" class="tabcontent perks">
+                    <p>
+                        Удваивает время действия после первого улучшения.<br>Последующее улучшение <b>навсегда</b> лишит возможности выйти из этой формы после превращения, взамен одарив заклинателя её более сильной формой.
+                    </p>
+                </div>
+                <div id="currupt-misc" class="tabcontent misc">
+                    <div class="table">
+                        <p>Цена:</p><p>1</p>
+                        <p>Макс. улучшений:</p><p>3</p>
+                        <p>Макс. ул. скорости:</p><p>1</p>
+                        <p>Макс. ул. мощи:</p><p>2</p>
+                        <p>Перезарядка:</p><p>120 (↓60)</p>
+                        <p>Нужен костюм:</p><p class="no">нет</p>
+                    </div>
+                </div>
+            </div>
+            <div class="class"><img src="images/spells/spellbooks/warlock.gif"><img src="images/spells/spellbooks/battlemage.gif"></div>
+        </div>
+        <div class="spell warlock battlemage" id="torment">
+            <div>
+                <div class="header">
+                    <img class="icon" src="images/spells/torment.png">
+                    <div class="tabs">
+                        <button class="tab active" onclick="showTab('torment', 'torment-desc')">Desc</button>
+                        <button class="tab" onclick="showTab('torment', 'torment-perks')">Perks</button>
+                        <button class="tab" onclick="showTab('torment', 'torment-misc')">Misc</button>
+                    </div>
+                </div>
+                <h3>Torment</h3>
+                <div id="torment-desc" class="tabcontent desc">
+                    <p>
+                        Это заклинание позволяет людям, находящимся вокруг заклинателя наблюдать видения, которые причиняют им невероятную боль.
+                    </p>
+                </div>
+                <div id="torment-perks" class="tabcontent perks">
+                    <p>
+                        Удваивает, утраивает, а затем и учетверяет причиняемую боль.
+                    </p>
+                </div>
+                <div id="torment-misc" class="tabcontent misc">
+                    <div class="table">
+                        <p>Цена:</p><p>1</p>
+                        <p>Макс. улучшений:</p><p>3</p>
+                        <p>Макс. ул. скорости:</p><p>0</p>
+                        <p>Макс. ул. мощи:</p><p>3</p>
+                        <p>Перезарядка:</p><p>15</p>
+                        <p>Нужен костюм:</p><p class="yes">да</p>
+                    </div>
+                </div>
+            </div>
+            <div class="class"><img src="images/spells/spellbooks/warlock.gif"><img src="images/spells/spellbooks/battlemage.gif"></div>
+        </div>
+        <div class="spell warlock" id="burn">
+            <div>
+                <div class="header">
+                    <img class="icon" src="images/spells/burn.png">
+                    <div class="tabs">
+                        <button class="tab active" onclick="showTab('burn', 'burn-desc')">Desc</button>
+                        <!-- <button class="tab" onclick="showTab('burn', 'burn-perks')">Perks</button> -->
+                        <button class="tab" onclick="showTab('burn', 'burn-misc')">Misc</button>
+                    </div>
+                </div>
+                <h3>Burning Grip</h3>
+                <div id="burn-desc" class="tabcontent desc">
+                    <p>
+                        Нагревает предметы цели, заставляя её их уронить.
+                    </p>
+                </div>
+                <!-- <div id="burn-perks" class="tabcontent perks">
+                    <p>
+                        Удваивает, утраивает, а затем и учетверяет причиняемую боль.
+                    </p>
+                </div> -->
+                <div id="burn-misc" class="tabcontent misc">
+                    <div class="table">
+                        <p>Цена:</p><p>1</p>
+                        <p>Макс. улучшений:</p><p>0</p>
+                        <p>Макс. ул. скорости:</p><p>0</p>
+                        <p>Макс. ул. мощи:</p><p>0</p>
+                        <!-- <p>Перезарядка:</p><p>15</p> -->
+                        <p>Нужен костюм:</p><p class="no">нет</p>
+                    </div>
+                </div>
+            </div>
+            <div class="class"><img src="images/spells/spellbooks/warlock.gif"></div>
+        </div>
+        <div class="spell warlock" id="blooddrain">
+            <div>
+                <div class="header">
+                    <img class="icon" src="images/spells/blooddrain.png">
+                    <div class="tabs">
+                        <button class="tab active" onclick="showTab('blooddrain', 'blooddrain-desc')">Desc</button>
+                        <!-- <button class="tab" onclick="showTab('blooddrain', 'blooddrain-perks')">Perks</button> -->
+                        <button class="tab" onclick="showTab('blooddrain', 'blooddrain-misc')">Misc</button>
+                    </div>
+                </div>
+                <h3>Blood Drain</h3>
+                <div id="blooddrain-desc" class="tabcontent desc">
+                    <p>
+                        Высасывайте кровь окружающих, при этом восстанавливаясь сами! Sharing is caring!
+                    </p>
+                </div>
+                <!-- <div id="blooddrain-perks" class="tabcontent perks">
+                    <p>
+                        Удваивает, утраивает, а затем и учетверяет причиняемую боль.
+                    </p>
+                </div> -->
+                <div id="blooddrain-misc" class="tabcontent misc">
+                    <div class="table">
+                        <p>Цена:</p><p>1</p>
+                        <p>Макс. улучшений:</p><p>0</p>
+                        <p>Макс. ул. скорости:</p><p>0</p>
+                        <p>Макс. ул. мощи:</p><p>0</p>
+                        <p>Перезарядка:</p><p>60</p>
+                        <p>Нужен костюм:</p><p class="yes">да</p>
+                    </div>
+                </div>
+            </div>
+            <div class="class"><img src="images/spells/spellbooks/warlock.gif"></div>
+        </div>
+        <div class="spell warlock druid spatial battlemage cleric standard" id="noclothes">
+            <div>
+                <div class="header">
+                    <img class="icon" src="images/spells/noclothes.png">
+                    <div class="tabs">
+                        <button class="tab active" onclick="showTab('noclothes', 'noclothes-desc')">Desc</button>
+                        <!-- <button class="tab" onclick="showTab('noclothes', 'noclothes-perks')">Perks</button> -->
+                        <button class="tab" onclick="showTab('noclothes', 'noclothes-misc')">Misc</button>
+                    </div>
+                </div>
+                <h3>No Clothes Requirement</h3>
+                <div id="noclothes-desc" class="tabcontent desc">
+                    <p>
+                        Позволяет вам использовать любые заклинания без одеяний.
+                    </p>
+                </div>
+                <!-- <div id="noclothes-perks" class="tabcontent perks">
+                    <p>
+                        Удваивает, утраивает, а затем и учетверяет причиняемую боль.
+                    </p>
+                </div> -->
+                <div id="noclothes-misc" class="tabcontent misc">
+                    <div class="table">
+                        <p>Цена:</p><p>3</p>
+                        <p>Макс. улучшений:</p><p>0</p>
+                        <p>Макс. ул. скорости:</p><p>0</p>
+                        <p>Макс. ул. мощи:</p><p>0</p>
+                        <!-- <p>Перезарядка:</p><p>60</p> -->
+                        <p>Нужен костюм:</p><p class="no">нет</p>
+                    </div>
+                </div>
+            </div>
+            <div class="class"><img src="images/spells/spellbooks/warlock.gif"><img src="images/spells/spellbooks/druid.gif" ><img src="images/spells/spellbooks/spatial.gif"><img src="images/spells/spellbooks/battlemage.gif"><img src="images/spells/spellbooks/cleric.png"><img src="images/spells/spellbooks/standard.png"></div>
+        </div>
+        <div class="spell druid cleric" id="sacrifice">
+            <div>
+                <div class="header">
+                    <img class="icon" src="images/spells/sacrifice.png">
+                    <div class="tabs">
+                        <button class="tab active" onclick="showTab('sacrifice', 'sacrifice-desc')">Desc</button>
+                        <button class="tab" onclick="showTab('sacrifice', 'sacrifice-perks')">Perks</button>
+                        <button class="tab" onclick="showTab('sacrifice', 'sacrifice-misc')">Misc</button>
+                    </div>
+                </div>
+                <h3>Sacrifice</h3>
+                <div id="sacrifice-desc" class="tabcontent desc">
+                    <p>
+                        Лечит все виды урона, кроме клон-урона, но взамен сильно обжигает волшебника.
+                    </p>
+                </div>
+                <div id="sacrifice-perks" class="tabcontent perks">
+                    <p>
+                        Заклинание теперь лечит органы и мозг, также выводя радиацию из организма цели.
+                    </p>
+                </div>
+                <div id="sacrifice-misc" class="tabcontent misc">
+                    <div class="table">
+                        <p>Цена:</p><p>1</p>
+                        <p>Макс. улучшений:</p><p>1</p>
+                        <p>Макс. ул. скорости:</p><p>0</p>
+                        <p>Макс. ул. мощи:</p><p>1</p>
+                        <!-- <p>Перезарядка:</p><p>60</p> -->
+                        <p>Нужен костюм:</p><p class="no">нет</p>
+                    </div>
+                </div>
+            </div>
+            <div class="class"><img src="images/spells/spellbooks/druid.gif"><img src="images/spells/spellbooks/cleric.png"></div>
+        </div>
+        <div class="spell druid battlemage" id="mirage">
+            <div>
+                <div class="header">
+                    <img class="icon" src="images/spells/mirage.png">
+                    <div class="tabs">
+                        <button class="tab active" onclick="showTab('mirage', 'mirage-desc')">Desc</button>
+                        <button class="tab" onclick="showTab('mirage', 'mirage-perks')">Perks</button>
+                        <button class="tab" onclick="showTab('mirage', 'mirage-misc')">Misc</button>
+                    </div>
+                </div>
+                <h3>Mirage</h3>
+                <div id="mirage-desc" class="tabcontent desc">
+                    <p>
+                        Призывает призраки карпов, которые сеют страх и ужас в рядах экипажа в течении минуты.
+                    </p>
+                </div>
+                <div id="mirage-perks" class="tabcontent perks">
+                    <p>
+                        Увеличивает количество карпов.
+                    </p>
+                </div>
+                <div id="mirage-misc" class="tabcontent misc">
+                    <div class="table">
+                        <p>Цена:</p><p>1</p>
+                        <p>Макс. улучшений:</p><p>4</p>
+                        <p>Макс. ул. скорости:</p><p>1</p>
+                        <p>Макс. ул. мощи:</p><p>3</p>
+                        <p>Перезарядка:</p><p>120 (↓60)</p>
+                        <p>Нужен костюм:</p><p class="yes">да</p>
+                    </div>
+                </div>
+            </div>
+            <div class="class"><img src="images/spells/spellbooks/druid.gif"><img src="images/spells/spellbooks/battlemage.gif"></div>
+        </div>
+        <div class="spell druid spatial" id="bats">
+            <div>
+                <div class="header">
+                    <img class="icon" src="images/spells/bats.png">
+                    <div class="tabs">
+                        <button class="tab active" onclick="showTab('bats', 'bats-desc')">Desc</button>
+                        <button class="tab" onclick="showTab('bats', 'bats-perks')">Perks</button>
+                        <button class="tab" onclick="showTab('bats', 'bats-misc')">Misc</button>
+                    </div>
+                </div>
+                <h3>Summon Space Bats</h3>
+                <div id="bats-desc" class="tabcontent desc">
+                    <p>
+                        Призывает нескольких летучих мышей, которые атакуют всех кроме Волшебника.
+                    </p>
+                </div>
+                <div id="bats-perks" class="tabcontent perks">
+                    <p>
+                        Увеличивает силу и живучесть призванных мышей.
+                    </p>
+                </div>
+                <div id="bats-misc" class="tabcontent misc">
+                    <div class="table">
+                        <p>Цена:</p><p>3</p>
+                        <p>Макс. улучшений:</p><p>3</p>
+                        <p>Макс. ул. скорости:</p><p>2</p>
+                        <p>Макс. ул. мощи:</p><p>3</p>
+                        <p>Перезарядка:</p><p>120 (↓60)</p>
+                        <p>Нужен костюм:</p><p class="yes">да</p>
+                    </div>
+                </div>
+            </div>
+            <div class="class"><img src="images/spells/spellbooks/druid.gif"><img src="images/spells/spellbooks/spatial.gif"></div>
+        </div>
+        <div class="spell druid" id="bear">
+            <div>
+                <div class="header">
+                    <img class="icon" src="images/spells/bear.png">
+                    <div class="tabs">
+                        <button class="tab active" onclick="showTab('bear', 'bear-desc')">Desc</button>
+                        <button class="tab" onclick="showTab('bear', 'bear-perks')">Perks</button>
+                        <button class="tab" onclick="showTab('bear', 'bear-misc')">Misc</button>
+                    </div>
+                </div>
+                <h3>Summon Bear</h3>
+                <div id="bear-desc" class="tabcontent desc">
+                    <p>
+                        Навсегда призывает медведя, который подчиняется приказам волшебника.
+                    </p>
+                </div>
+                <div id="bear-perks" class="tabcontent perks">
+                    <p>
+                        Каждый пункт делает медведя сильнее.
+                    </p>
+                </div>
+                <div id="bear-misc" class="tabcontent misc">
+                    <div class="table">
+                        <p>Цена:</p><p>1</p>
+                        <p>Макс. улучшений:</p><p>4</p>
+                        <p>Макс. ул. скорости:</p><p>0</p>
+                        <p>Макс. ул. мощи:</p><p>4</p>
+                        <p>Перезарядка:</p><p>300</p>
+                        <p>Нужен костюм:</p><p class="yes">да</p>
+                    </div>
+                </div>
+            </div>
+            <div class="class"><img src="images/spells/spellbooks/druid.gif"></div>
+        </div>
+        <div class="spell druid" id="party">
+            <div>
+                <div class="header">
+                    <img class="icon" src="images/spells/bats.png">
+                    <div class="tabs">
+                        <button class="tab active" onclick="showTab('party', 'party-desc')">Desc</button>
+                        <button class="tab" onclick="showTab('party', 'party-perks')">Perks</button>
+                        <button class="tab" onclick="showTab('party', 'party-misc')">Misc</button>
+                    </div>
+                </div>
+                <h3>Summon Party</h3>
+                <div id="party-desc" class="tabcontent desc">
+                    <p>
+                        Призывает всё то, что не было выпито в тот вечер пятницы в руки невольных участников вечеринки.
+                    </p>
+                </div>
+                <div id="party-perks" class="tabcontent perks">
+                    <p>
+                        После первого улучшения, выдает ещё и по крендельку каждому из тусовщиков. После второго заменяет пиво на абсент и выдает каждому магическую шляпу для вечеринок.
+                    </p>
+                </div>
+                <div id="party-misc" class="tabcontent misc">
+                    <div class="table">
+                        <p>Цена:</p><p>1</p>
+                        <p>Макс. улучшений:</p><p>3</p>
+                        <p>Макс. ул. скорости:</p><p>1</p>
+                        <p>Макс. ул. мощи:</p><p>2</p>
+                        <p>Перезарядка:</p><p>90 (↓60)</p>
+                        <p>Нужен костюм:</p><p class="no">нет</p>
+                    </div>
+                </div>
+            </div>
+            <div class="class"><img src="images/spells/spellbooks/druid.gif"></div>
+        </div>
+        <div class="spell druid" id="seed">
+            <div>
+                <div class="header">
+                    <img class="icon" src="images/spells/seed.png">
+                    <div class="tabs">
+                        <button class="tab active" onclick="showTab('seed', 'seed-desc')">Desc</button>
+                        <!-- <button class="tab" onclick="showTab('seed', 'seed-perks')">Perks</button> -->
+                        <button class="tab" onclick="showTab('seed', 'seed-misc')">Misc</button>
+                    </div>
+                </div>
+                <h3>Summon Seed</h3>
+                <div id="seed-desc" class="tabcontent desc">
+                    <p>
+                        Призывает горсть случайных семян.
+                    </p>
+                </div>
+                <!-- <div id="seed-perks" class="tabcontent perks">
+                    <p>
+                        Увеличивает силу и живучесть призванных мышей.
+                    </p>
+                </div> -->
+                <div id="seed-misc" class="tabcontent misc">
+                    <div class="table">
+                        <p>Цена:</p><p>1</p>
+                        <p>Макс. улучшений:</p><p>3</p>
+                        <p>Макс. ул. скорости:</p><p>3</p>
+                        <p>Макс. ул. мощи:</p><p>0</p>
+                        <p>Перезарядка:</p><p>60 (↓20)</p>
+                        <p>Нужен костюм:</p><p class="yes">да</p>
+                    </div>
+                </div>
+            </div>
+            <div class="class"><img src="images/spells/spellbooks/druid.gif"></div>
+        </div>
+        <div class="spell druid spatial" id="polymorph">
+            <div>
+                <div class="header">
+                    <img class="icon" src="images/spells/polymorph.png">
+                    <div class="tabs">
+                        <button class="tab active" onclick="showTab('polymorph', 'polymorph-desc')">Desc</button>
+                        <!-- <button class="tab" onclick="showTab('polymorph', 'polymorph-perks')">Perks</button> -->
+                        <button class="tab" onclick="showTab('polymorph', 'polymorph-misc')">Misc</button>
+                    </div>
+                </div>
+                <h3>Polymorph</h3>
+                <div id="polymorph-desc" class="tabcontent desc">
+                    <p>
+                        Превращает волшебника в птицу на 15 секунд.
+                    </p>
+                </div>
+                <!-- <div id="polymorph-perks" class="tabcontent perks">
+                    <p>
+                        Увеличивает силу и живучесть призванных мышей.
+                    </p>
+                </div> -->
+                <div id="polymorph-misc" class="tabcontent misc">
+                    <div class="table">
+                        <p>Цена:</p><p>1</p>
+                        <p>Макс. улучшений:</p><p>1</p>
+                        <p>Макс. ул. скорости:</p><p>1</p>
+                        <p>Макс. ул. мощи:</p><p>0</p>
+                        <p>Перезарядка:</p><p>60 (↓30)</p>
+                        <p>Нужен костюм:</p><p class="no">нет</p>
+                    </div>
+                </div>
+            </div>
+            <div class="class"><img src="images/spells/spellbooks/druid.gif"><img src="images/spells/spellbooks/spatial.gif"></div>
+        </div>
+        <div class="spell druid standard id="tech">
+            <div>
+                <div class="header">
+                    <img class="icon" src="images/spells/tech.png">
+                    <div class="tabs">
+                        <button class="tab active" onclick="showTab('tech', 'tech-desc')">Desc</button>
+                        <button class="tab" onclick="showTab('tech', 'tech-perks')">Perks</button>
+                        <button class="tab" onclick="showTab('tech', 'tech-misc')">Misc</button>
+                    </div>
+                </div>
+                <h3>Disable Tech</h3>
+                <div id="tech-desc" class="tabcontent desc">
+                    <p>
+                        Отключает всю электронику рядом с вами. Опасайтесь людей, которые носят оптические сенсоры.
+                    </p>
+                </div>
+                <div id="tech-perks" class="tabcontent perks">
+                    <p>
+                        Расширяет зону действия эффекта на 2 тайла за каждый пункт.
+                    </p>
+                </div>
+                <div id="tech-misc" class="tabcontent misc">
+                    <div class="table">
+                        <p>Цена:</p>                <p>1</p>
+                        <p>Макс. улучшений:</p>     <p>2</p>
+                        <p>Макс. ул. скорости:</p>  <p>2</p>
+                        <p>Макс. ул. мощи:</p>      <p>2</p>
+                        <p>Перезарядка:</p>         <p>40 (↓20)</p>
+                        <p>Нужен костюм:</p>        <p class="yes">да</p>
+                    </div>
+                </div>
+            </div>
+            <div class="class"><img src="images/spells/spellbooks/druid.gif"><img src="images/spells/spellbooks/standard.png"></div>
+        </div>
+        <div class="spell druid" id="entangle">
+            <div>
+                <div class="header">
+                    <img class="icon" src="images/spells/entangle.png">
+                    <div class="tabs">
+                        <button class="tab active" onclick="showTab('entangle', 'entangle-desc')">Desc</button>
+                        <button class="tab" onclick="showTab('entangle', 'entangle-perks')">Perks</button>
+                        <button class="tab" onclick="showTab('entangle', 'entangle-misc')">Misc</button>
+                    </div>
+                </div>
+                <h3>Entangle</h3>
+                <div id="entangle-desc" class="tabcontent desc">
+                    <p>
+                        Призывает лозу, которая приковывает цель к полу на 30 секунд.
+                    </p>
+                </div>
+                <div id="entangle-perks" class="tabcontent perks">
+                    <p>
+                        Увеличивает кол-во жертв за использование.
+                    </p>
+                </div>
+                <div id="entangle-misc" class="tabcontent misc">
+                    <div class="table">
+                        <p>Цена:</p>                <p>1</p>
+                        <p>Макс. улучшений:</p>     <p>2</p>
+                        <p>Макс. ул. скорости:</p>  <p>2</p>
+                        <p>Макс. ул. мощи:</p>      <p>2</p>
+                        <p>Перезарядка:</p>         <p>60 (↓30)</p>
+                        <p>Нужен костюм:</p>        <p class="yes">да</p>
+                    </div>
+                </div>
+            </div>
+            <div class="class"><img src="images/spells/spellbooks/druid.gif"></div>
+        </div>
+        <div class="spell druid cleric" id="grove">
+            <div>
+                <div class="header">
+                    <img class="icon" src="images/spells/grove.png">
+                    <div class="tabs">
+                        <button class="tab active" onclick="showTab('grove', 'grove-desc')">Desc</button>
+                        <button class="tab" onclick="showTab('grove', 'grove-perks')">Perks</button>
+                        <button class="tab" onclick="showTab('grove', 'grove-misc')">Misc</button>
+                    </div>
+                </div>
+                <h3>Sanctuary</h3>
+                <div id="grove-desc" class="tabcontent desc">
+                    <p>
+                        Превращает пол неподалеку в освященную траву, а также покрывает ее лечебными цветами, которые хватают людей, как лоза. Плоды этого растения имеют в своем составе бикардин, дермалин, диловен, трикордразин, алкизин, имидазалин и перидаксон.
+                    </p>
+                </div>
+                <div id="grove-perks" class="tabcontent perks">
+                    <p>
+                        Позволяет лечебным цветам распространятся как лозе. Также при улучшении начинает закрывать обзор.
+                    </p>
+                </div>
+                <div id="grove-misc" class="tabcontent misc">
+                    <div class="table">
+                        <p>Цена:</p>                <p>1</p>
+                        <p>Макс. улучшений:</p>     <p>3</p>
+                        <p>Макс. ул. скорости:</p>  <p>3</p>
+                        <p>Макс. ул. мощи:</p>      <p>1</p>
+                        <p>Перезарядка:</p>         <p>120 (↓60)</p>
+                        <p>Нужен костюм:</p>        <p class="yes">да</p>
+                    </div>
+                </div>
+            </div>
+            <div class="class"><img src="images/spells/spellbooks/druid.gif"><img src="images/spells/spellbooks/cleric.png"></div>
+        </div>
+        <div class="spell druid cleric standard" id="knock">
+            <div>
+                <div class="header">
+                    <img class="icon" src="images/spells/knock.png">
+                    <div class="tabs">
+                        <button class="tab active" onclick="showTab('knock', 'knock-desc')">Desc</button>
+                        <button class="tab" onclick="showTab('knock', 'knock-perks')">Perks</button>
+                        <button class="tab" onclick="showTab('knock', 'knock-misc')">Misc</button>
+                    </div>
+                </div>
+                <h3>Knock</h3>
+                <div id="knock-desc" class="tabcontent desc">
+                    <p>
+                        Открывает все двери рядом с вами, вне зависимости от типа двери.
+                    </p>
+                </div>
+                <div id="knock-perks" class="tabcontent perks">
+                    <p>
+                        Удваивает дальность заклинания.
+                    </p>
+                </div>
+                <div id="knock-misc" class="tabcontent misc">
+                    <div class="table">
+                        <p>Цена:</p>                <p>1</p>
+                        <p>Макс. улучшений:</p>     <p>4</p>
+                        <p>Макс. ул. скорости:</p>  <p>4</p>
+                        <p>Макс. ул. мощи:</p>      <p>1</p>
+                        <p>Перезарядка:</p>         <p>10 (↓2)</p>
+                        <p>Нужен костюм:</p>        <p class="no">нет</p>
+                    </div>
+                </div>
+            </div>
+            <div class="class"><img src="images/spells/spellbooks/druid.gif"><img src="images/spells/spellbooks/cleric.png"><img src="images/spells/spellbooks/standard.png"></div>
+        </div>
+        <div class="spell spatial cleric standard" id="jaunt">
+            <div>
+                <div class="header">
+                    <img class="icon" src="images/spells/jaunt.png">
+                    <div class="tabs">
+                        <button class="tab active" onclick="showTab('jaunt', 'jaunt-desc')">Desc</button>
+                        <button class="tab" onclick="showTab('jaunt', 'jaunt-perks')">Perks</button>
+                        <button class="tab" onclick="showTab('jaunt', 'jaunt-misc')">Misc</button>
+                    </div>
+                </div>
+                <h3>Etheral Jaunt</h3>
+                <div id="jaunt-desc" class="tabcontent desc">
+                    <p>
+                        Маг растворяется в воздухе, становясь невидимым даже для термальных сенсоров, и получает возможность проходить сквозь стены и прочие препятствия. Длится 5 секунд.
+                    </p>
+                </div>
+                <div id="jaunt-perks" class="tabcontent perks">
+                    <p>
+                        Увеличивает длительность на 2 секунды за каждый пункт.
+                    </p>
+                </div>
+                <div id="jaunt-misc" class="tabcontent misc">
+                    <div class="table">
+                        <p>Цена:</p>                <p>1</p>
+                        <p>Макс. улучшений:</p>     <p>4</p>
+                        <p>Макс. ул. скорости:</p>  <p>3</p>
+                        <p>Макс. ул. мощи:</p>      <p>3</p>
+                        <p>Перезарядка:</p>         <p>30 (↓10)</p>
+                        <p>Нужен костюм:</p>        <p class="yes">да</p>
+                    </div>
+                </div>
+            </div>
+            <div class="class"><img src="images/spells/spellbooks/spatial.gif"><img src="images/spells/spellbooks/cleric.png"><img src="images/spells/spellbooks/standard.png"></div>
+        </div>
+        <div class="spell spatial battlemage" id="recall">
+            <div>
+                <div class="header">
+                    <img class="icon" src="images/spells/recall.png">
+                    <div class="tabs">
+                        <button class="tab active" onclick="showTab('recall', 'recall-desc')">Desc</button>
+                        <button class="tab" onclick="showTab('recall', 'recall-perks')">Perks</button>
+                        <button class="tab" onclick="showTab('recall', 'recall-misc')">Misc</button>
+                    </div>
+                </div>
+                <h3>Mark and Recall</h3>
+                <div id="recall-desc" class="tabcontent desc">
+                    <p>
+                        Позволяет пометить вещь и призвать её в случае надобности. Метку можно снять только с помощью Вашей книги или Нуллрода Священника.
+                    </p>
+                </div>
+                <div id="recall-perks" class="tabcontent perks">
+                    <p>
+                        Можно призвать вещь будучи оглушенным или без сознания.
+                    </p>
+                </div>
+                <div id="recall-misc" class="tabcontent misc">
+                    <div class="table">
+                        <p>Цена:</p>                <p>1</p>
+                        <p>Макс. улучшений:</p>     <p>3</p>
+                        <p>Макс. ул. скорости:</p>  <p>2</p>
+                        <p>Макс. ул. мощи:</p>      <p>1</p>
+                        <p>Перезарядка:</p>         <p>60 (↓30)</p>
+                        <p>Нужен костюм:</p>        <p class="no">нет</p>
+                    </div>
+                </div>
+            </div>
+            <div class="class"><img src="images/spells/spellbooks/spatial.gif"><img src="images/spells/spellbooks/battlemage.gif"></div>
+        </div>
+        <div class="spell spatial" id="swap">
+            <div>
+                <div class="header">
+                    <img class="icon" src="images/spells/swap.png">
+                    <div class="tabs">
+                        <button class="tab active" onclick="showTab('swap', 'swap-desc')">Desc</button>
+                        <button class="tab" onclick="showTab('swap', 'swap-perks')">Perks</button>
+                        <button class="tab" onclick="showTab('swap', 'swap-misc')">Misc</button>
+                    </div>
+                </div>
+                <h3>Swap</h3>
+                <div id="swap-desc" class="tabcontent desc">
+                    <p>
+                        Позволяет меняться местами со случайной целью. Наносит урон мозгу.
+                    </p>
+                </div>
+                <div id="swap-perks" class="tabcontent perks">
+                    <p>
+                        Ослабляет и ослепляет цель. Дальнейшее улучшение усилит этот эффект.
+                    </p>
+                </div>
+                <div id="swap-misc" class="tabcontent misc">
+                    <div class="table">
+                        <p>Цена:</p>                <p>1</p>
+                        <p>Макс. улучшений:</p>     <p>2</p>
+                        <p>Макс. ул. скорости:</p>  <p>0</p>
+                        <p>Макс. ул. мощи:</p>      <p>2</p>
+                        <!-- <p>Перезарядка:</p>         <p>60 (↓30)</p> -->
+                        <p>Нужен костюм:</p>        <p class="no">нет</p>
+                    </div>
+                </div>
+            </div>
+            <div class="class"><img src="images/spells/spellbooks/spatial.gif"></div>
+        </div>
+        <div class="spell spatial cleric standard" id="forcewall">
+            <div>
+                <div class="header">
+                    <img class="icon" src="images/spells/forcewall.png">
+                    <div class="tabs">
+                        <button class="tab active" onclick="showTab('forcewall', 'forcewall-desc')">Desc</button>
+                        <!-- <button class="tab" onclick="showTab('forcewall', 'forcewall-perks')">Perks</button> -->
+                        <button class="tab" onclick="showTab('forcewall', 'forcewall-misc')">Misc</button>
+                    </div>
+                </div>
+                <h3>Forcewall</h3>
+                <div id="forcewall-desc" class="tabcontent desc">
+                    <p>
+                        Создает неразрушимую стену на 30 секунд.
+                    </p>
+                </div>
+                <!-- <div id="forcewall-perks" class="tabcontent perks">
+                    <p>
+                        Ослабляет и ослепляет цель. Дальнейшее улучшение усилит этот эффект.
+                    </p>
+                </div> -->
+                <div id="forcewall-misc" class="tabcontent misc">
+                    <div class="table">
+                        <p>Цена:</p>                <p>1</p>
+                        <p>Макс. улучшений:</p>     <p>2</p>
+                        <p>Макс. ул. скорости:</p>  <p>2</p>
+                        <p>Макс. ул. мощи:</p>      <p>0</p>
+                        <p>Перезарядка:</p>         <p>10 (↓0)</p>
+                        <p>Нужен костюм:</p>        <p class="no">нет</p>
+                    </div>
+                </div>
+            </div>
+            <div class="class"><img src="images/spells/spellbooks/spatial.gif"><img src="images/spells/spellbooks/cleric.png"><img src="images/spells/spellbooks/standard.png"></div>
+        </div>
+        <div class="spell battlemage" id="dyrnwyn">
+            <div>
+                <div class="header">
+                    <img class="icon" src="images/spells/radiant.png">
+                    <div class="tabs">
+                        <button class="tab active" onclick="showTab('dyrnwyn', 'dyrnwyn-desc')">Desc</button>
+                        <button class="tab" onclick="showTab('dyrnwyn', 'dyrnwyn-perks')">Perks</button>
+                        <button class="tab" onclick="showTab('dyrnwyn', 'dyrnwyn-misc')">Misc</button>
+                    </div>
+                </div>
+                <h3>Summon Dyrnwyn</h3>
+                <div id="dyrnwyn-desc" class="tabcontent desc">
+                    <p>
+                        Призывает меч.
+                    </p>
+                </div>
+                <div id="dyrnwyn-perks" class="tabcontent perks">
+                    <p>
+                        Открывает истинную форму меча. Теперь его можно активировать чтобы поджечь. Обычная форма наносит режущий урон, активированная - огненный.
+                    </p>
+                </div>
+                <div id="dyrnwyn-misc" class="tabcontent misc">
+                    <div class="table">
+                        <p>Цена:</p>                <p>1</p>
+                        <p>Макс. улучшений:</p>     <p>1</p>
+                        <p>Макс. ул. скорости:</p>  <p>0</p>
+                        <p>Макс. ул. мощи:</p>      <p>1</p>
+                        <p>Перезарядка:</p>         <p>1</p>
+                        <p>Нужен костюм:</p>        <p class="no">нет</p>
+                    </div>
+                </div>
+            </div>
+            <div class="class"><img src="images/spells/spellbooks/battlemage.gif"></div>
+        </div>
+        <div class="spell battlemage" id="shield">
+            <div>
+                <div class="header">
+                    <img class="icon" src="images/spells/forcewall.png">
+                    <div class="tabs">
+                        <button class="tab active" onclick="showTab('shield', 'shield-desc')">Desc</button>
+                        <button class="tab" onclick="showTab('shield', 'shield-perks')">Perks</button>
+                        <button class="tab" onclick="showTab('shield', 'shield-misc')">Misc</button>
+                    </div>
+                </div>
+                <h3>Summon Shield</h3>
+                <div id="shield-desc" class="tabcontent desc">
+                    <p>
+                        Призывает магический шит, который может блокировать пули.
+                    </p>
+                </div>
+                <div id="shield-perks" class="tabcontent perks">
+                    <p>
+                        Удваивает шанс блока для щита, теперь он может отражать пули.
+                    </p>
+                </div>
+                <div id="shield-misc" class="tabcontent misc">
+                    <div class="table">
+                        <p>Цена:</p>                <p>1</p>
+                        <p>Макс. улучшений:</p>     <p>3</p>
+                        <p>Макс. ул. скорости:</p>  <p>2</p>
+                        <p>Макс. ул. мощи:</p>      <p>1</p>
+                        <p>Перезарядка:</p>         <p>90 (↓30)</p>
+                        <p>Нужен костюм:</p>        <p class="yes">да</p>
+                    </div>
+                </div>
+            </div>
+            <div class="class"><img src="images/spells/spellbooks/battlemage.gif"></div>
+        </div>
+        <div class="spell battlemage standard" id="mutate">
+            <div>
+                <div class="header">
+                    <img class="icon" src="images/spells/mutate.png">
+                    <div class="tabs">
+                        <button class="tab active" onclick="showTab('mutate', 'mutate-desc')">Desc</button>
+                        <!-- <button class="tab" onclick="showTab('mutate', 'mutate-perks')">Perks</button> -->
+                        <button class="tab" onclick="showTab('mutate', 'mutate-misc')">Misc</button>
+                    </div>
+                </div>
+                <h3>Mutate</h3>
+                <div id="mutate-desc" class="tabcontent desc">
+                    <p>
+                        На короткое время превращает вас в халка, обладающего большой силой и способностью стрелять лазером из глаз.
+                    </p>
+                </div>
+                <!-- <div id="mutate-perks" class="tabcontent perks">
+                    <p>
+                        Удваивает шанс блока для щита, теперь он может отражать пули.
+                    </p>
+                </div> -->
+                <div id="mutate-misc" class="tabcontent misc">
+                    <div class="table">
+                        <p>Цена:</p>                <p>1</p>
+                        <p>Макс. улучшений:</p>     <p>1</p>
+                        <p>Макс. ул. скорости:</p>  <p>1</p>
+                        <p>Макс. ул. мощи:</p>      <p>0</p>
+                        <p>Перезарядка:</p>         <p>40 (↓30)</p>
+                        <p>Нужен костюм:</p>        <p class="yes">да</p>
+                    </div>
+                </div>
+            </div>
+            <div class="class"><img src="images/spells/spellbooks/battlemage.gif"><img src="images/spells/spellbooks/standard.png"></div>
+        </div>
+        <div class="spell battlemage cleric" id="radiant">
+            <div>
+                <div class="header">
+                    <img class="icon" src="images/spells/radiant.png">
+                    <div class="tabs">
+                        <button class="tab active" onclick="showTab('radiant', 'radiant-desc')">Desc</button>
+                        <!-- <button class="tab" onclick="showTab('radiant', 'radiant-perks')">Perks</button> -->
+                        <button class="tab" onclick="showTab('radiant', 'radiant-misc')">Misc</button>
+                    </div>
+                </div>
+                <h3>Radiant Aura</h3>
+                <div id="radiant-desc" class="tabcontent desc">
+                    <p>
+                        Покрывает тело Волшебника аурой света, что защищает от лазеров. Действует 15 секунд.
+                    </p>
+                </div>
+                <!-- <div id="radiant-perks" class="tabcontent perks">
+                    <p>
+                        Удваивает шанс блока для щита, теперь он может отражать пули.
+                    </p>
+                </div> -->
+                <div id="radiant-misc" class="tabcontent misc">
+                    <div class="table">
+                        <p>Цена:</p>                <p>1</p>
+                        <p>Макс. улучшений:</p>     <p>2</p>
+                        <p>Макс. ул. скорости:</p>  <p>2</p>
+                        <p>Макс. ул. мощи:</p>      <p>0</p>
+                        <p>Перезарядка:</p>         <p>30 (↓15)</p>
+                        <p>Нужен костюм:</p>        <p class="yes">да</p>
+                    </div>
+                </div>
+            </div>
+            <div class="class"><img src="images/spells/spellbooks/battlemage.gif"><img src="images/spells/spellbooks/cleric.png"></div>
+        </div>
+        <div class="spell cleric" id="majorheal">
+            <div>
+                <div class="header">
+                    <img class="icon" src="images/spells/majorheal.png">
+                    <div class="tabs">
+                        <button class="tab active" onclick="showTab('majorheal', 'majorheal-desc')">Desc</button>
+                        <button class="tab" onclick="showTab('majorheal', 'majorheal-perks')">Perks</button>
+                        <button class="tab" onclick="showTab('majorheal', 'majorheal-misc')">Misc</button>
+                    </div>
+                </div>
+                <h3>Major Heal</h3>
+                <div id="majorheal-desc" class="tabcontent desc">
+                    <p>
+                        Заклинание, используемое для лечения серьёзных ранений.
+                    </p>
+                </div>
+                <div id="majorheal-perks" class="tabcontent perks">
+                    <p>
+                        При первом улучшении позволяет лечить переломы. При втором - внутренние кровотечения. Каждый раз улучшает качество лечения.
+                    </p>
+                </div>
+                <div id="majorheal-misc" class="tabcontent misc">
+                    <div class="table">
+                        <p>Цена:</p>                <p>1</p>
+                        <p>Макс. улучшений:</p>     <p>2</p>
+                        <p>Макс. ул. скорости:</p>  <p>1</p>
+                        <p>Макс. ул. мощи:</p>      <p>2</p>
+                        <p>Перезарядка:</p>         <p>300 (↓200)</p>
+                        <p>Нужен костюм:</p>        <p class="yes">да</p>
+                    </div>
+                </div>
+            </div>
+            <div class="class"><img src="images/spells/spellbooks/cleric.png"></div>
+        </div>
+        <div class="spell cleric" id="areaheal">
+            <div>
+                <div class="header">
+                    <img class="icon" src="images/spells/areaheal.png">
+                    <div class="tabs">
+                        <button class="tab active" onclick="showTab('areaheal', 'areaheal-desc')">Desc</button>
+                        <button class="tab" onclick="showTab('areaheal', 'areaheal-perks')">Perks</button>
+                        <button class="tab" onclick="showTab('areaheal', 'areaheal-misc')">Misc</button>
+                    </div>
+                </div>
+                <h3>Major Heal</h3>
+                <div id="areaheal-desc" class="tabcontent desc">
+                    <p>
+                        Лечит все в пределах действия заклинания.
+                    </p>
+                </div>
+                <div id="areaheal-perks" class="tabcontent perks">
+                    <p>
+                        Увеличивает зону действия заклинания, как и его лечебный потенциал.
+                    </p>
+                </div>
+                <div id="areaheal-misc" class="tabcontent misc">
+                    <div class="table">
+                        <p>Цена:</p>                <p>1</p>
+                        <p>Макс. улучшений:</p>     <p>1</p>
+                        <p>Макс. ул. скорости:</p>  <p>1</p>
+                        <p>Макс. ул. мощи:</p>      <p>1</p>
+                        <p>Перезарядка:</p>         <p>60 (↓30)</p>
+                        <p>Нужен костюм:</p>        <p class="no">нет</p>
+                    </div>
+                </div>
+            </div>
+            <div class="class"><img src="images/spells/spellbooks/cleric.png"></div>
+        </div>
+        <div class="spell cleric standard" id="blind">
+            <div>
+                <div class="header">
+                    <img class="icon" src="images/spells/blind.png">
+                    <div class="tabs">
+                        <button class="tab active" onclick="showTab('blind', 'blind-desc')">Desc</button>
+                        <button class="tab" onclick="showTab('blind', 'blind-perks')">Perks</button>
+                        <button class="tab" onclick="showTab('blind', 'blind-misc')">Misc</button>
+                    </div>
+                </div>
+                <h3>Blind</h3>
+                <div id="blind-desc" class="tabcontent desc">
+                    <p>
+                        Накладывает проклятие слепоты на цель длительностью в 30 секунд.
+                    </p>
+                </div>
+                <div id="blind-perks" class="tabcontent perks">
+                    <p>
+                        Увеличивает длительность эффекта на 10 секунд.
+                    </p>
+                </div>
+                <div id="blind-misc" class="tabcontent misc">
+                    <div class="table">
+                        <p>Цена:</p>                <p>1</p>
+                        <p>Макс. улучшений:</p>     <p>3</p>
+                        <p>Макс. ул. скорости:</p>  <p>1</p>
+                        <p>Макс. ул. мощи:</p>      <p>3</p>
+                        <p>Перезарядка:</p>         <p>30 (↓5)</p>
+                        <p>Нужен костюм:</p>        <p class="no">нет</p>
+                    </div>
+                </div>
+            </div>
+            <div class="class"><img src="images/spells/spellbooks/cleric.png"><img src="images/spells/spellbooks/standard.png"></div>
+        </div>
+        <div class="spell cleric" id="baleful">
+            <div>
+                <div class="header">
+                    <img class="icon" src="images/spells/baleful.png">
+                    <div class="tabs">
+                        <button class="tab active" onclick="showTab('baleful', 'baleful-desc')">Desc</button>
+                        <button class="tab" onclick="showTab('baleful', 'baleful-perks')">Perks</button>
+                        <button class="tab" onclick="showTab('baleful', 'baleful-misc')">Misc</button>
+                    </div>
+                </div>
+                <h3>Baleful Polymorph</h3>
+                <div id="baleful-desc" class="tabcontent desc">
+                    <p>
+                        Превращает цель в маленькую, безобидную тварь на 15 секунд. С цели снимаются все надетые вещи, в том числе наручники. Имеет шанс превратить цель во что-то опаснее.
+                    </p>
+                </div>
+                <div id="baleful-perks" class="tabcontent perks">
+                    <p>
+                        Увеличивает длительность на 10 секунд за каждый пункт.
+                    </p>
+                </div>
+                <div id="baleful-misc" class="tabcontent misc">
+                    <div class="table">
+                        <p>Цена:</p>                <p>1</p>
+                        <p>Макс. улучшений:</p>     <p>2</p>
+                        <p>Макс. ул. скорости:</p>  <p>2</p>
+                        <p>Макс. ул. мощи:</p>      <p>2</p>
+                        <p>Перезарядка:</p>         <p>60 (↓20)</p>
+                        <p>Нужен костюм:</p>        <p class="yes">да</p>
+                    </div>
+                </div>
+            </div>
+            <div class="class"><img src="images/spells/spellbooks/cleric.png"></div>
+        </div>
+        <div class="spell cleric" id="cuff">
+            <div>
+                <div class="header">
+                    <img class="icon" src="images/spells/cuff.png">
+                    <div class="tabs">
+                        <button class="tab active" onclick="showTab('cuff', 'cuff-desc')">Desc</button>
+                        <button class="tab" onclick="showTab('cuff', 'cuff-perks')">Perks</button>
+                        <button class="tab" onclick="showTab('cuff', 'cuff-misc')">Misc</button>
+                    </div>
+                </div>
+                <h3>Stun Cuff</h3>
+                <div id="cuff-desc" class="tabcontent desc">
+                    <p>
+                        Выстреливает снаряд, который при контакте с целью заковывает её в наручники и оглушает. Использует систему зарядов, что означает, что количество использований ограничено.
+                    </p>
+                </div>
+                <div id="cuff-perks" class="tabcontent perks">
+                    <p>
+                        Заряды теперь восполняются со временем, их количество увеличено до 40.
+                    </p>
+                </div>
+                <div id="cuff-misc" class="tabcontent misc">
+                    <div class="table">
+                        <p>Цена:</p>                <p>1</p>
+                        <p>Макс. улучшений:</p>     <p>1</p>
+                        <p>Макс. ул. скорости:</p>  <p>0</p>
+                        <p>Макс. ул. мощи:</p>      <p>1</p>
+                        <p>Зарядов:</p>             <p>6 (↑40)</p>
+                        <p>Нужен костюм:</p>        <p class="no">нет</p>
+                    </div>
+                </div>
+            </div>
+            <div class="class"><img src="images/spells/spellbooks/cleric.png"></div>
+        </div>
+        <div class="spell cleric" id="relic">
+            <div>
+                <div class="header">
+                    <img class="icon" src="images/spells/relic.png">
+                    <div class="tabs">
+                        <button class="tab active" onclick="showTab('relic', 'relic-desc')">Desc</button>
+                        <button class="tab" onclick="showTab('relic', 'relic-perks')">Perks</button>
+                        <button class="tab" onclick="showTab('relic', 'relic-misc')">Misc</button>
+                    </div>
+                </div>
+                <h3>Summon Holy Relic</h3>
+                <div id="relic-desc" class="tabcontent desc">
+                    <p>
+                        Призывает Нуллрод на 25 секунд.
+                    </p>
+                </div>
+                <div id="relic-perks" class="tabcontent perks">
+                    <p>
+                        Увеличивает длительность на 5 секунд.
+                    </p>
+                </div>
+                <div id="relic-misc" class="tabcontent misc">
+                    <div class="table">
+                        <p>Цена:</p>                <p>1</p>
+                        <p>Макс. улучшений:</p>     <p>2</p>
+                        <p>Макс. ул. скорости:</p>  <p>1</p>
+                        <p>Макс. ул. мощи:</p>      <p>2</p>
+                        <p>Перезарядка:</p>         <p>60 (↓35)</p>
+                        <p>Нужен костюм:</p>        <p class="yes">да</p>
+                    </div>
+                </div>
+            </div>
+            <div class="class"><img src="images/spells/spellbooks/cleric.png"></div>
+        </div>
+        <div class="spell cleric" id="dominate">
+            <div>
+                <div class="header">
+                    <img class="icon" src="images/spells/dominate.png">
+                    <div class="tabs">
+                        <button class="tab active" onclick="showTab('dominate', 'dominate-desc')">Desc</button>
+                        <!-- <button class="tab" onclick="showTab('dominate', 'dominate-perks')">Perks</button> -->
+                        <button class="tab" onclick="showTab('dominate', 'dominate-misc')">Misc</button>
+                    </div>
+                </div>
+                <h3>Mind Control</h3>
+                <div id="dominate-desc" class="tabcontent desc">
+                    <p>
+                        Позволяет подчинить гуманоида, внедряя в него заранее введённые приказы. Эффект снимается святой водой.
+                    </p>
+                </div>
+                <!-- <div id="dominate-perks" class="tabcontent perks">
+                    <p>
+                        Увеличивает длительность на 5 секунд.
+                    </p>
+                </div> -->
+                <div id="dominate-misc" class="tabcontent misc">
+                    <div class="table">
+                        <p>Цена:</p>                <p>2</p>
+                        <p>Макс. улучшений:</p>     <p>0</p>
+                        <p>Макс. ул. скорости:</p>  <p>0</p>
+                        <p>Макс. ул. мощи:</p>      <p>0</p>
+                        <p>Перезарядка:</p>         <p>300</p>
+                        <p>Нужен костюм:</p>        <p class="yes">да</p>
+                    </div>
+                </div>
+            </div>
+            <div class="class"><img src="images/spells/spellbooks/cleric.png"></div>
+        </div>
+        <div class="spell standard" id="subj">
+            <div>
+                <div class="header">
+                    <img class="icon" src="images/spells/subj.png">
+                    <div class="tabs">
+                        <button class="tab active" onclick="showTab('subj', 'subj-desc')">Desc</button>
+                        <button class="tab" onclick="showTab('subj', 'subj-perks')">Perks</button>
+                        <button class="tab" onclick="showTab('subj', 'subj-misc')">Misc</button>
+                    </div>
+                </div>
+                <h3>Subjugation</h3>
+                <div id="subj-desc" class="tabcontent desc">
+                    <p>
+                        Сокрушает жалкие умы ваших врагов, нарушая их мелкую моторику! Сработает только на гуманоидов.
+                    </p>
+                </div>
+                <div id="subj-perks" class="tabcontent perks">
+                    <p>
+                        Увеличивает кол-во целей на одну. На максимальном уровне поражает всех в зоне действия.
+                    </p>
+                </div>
+                <div id="subj-misc" class="tabcontent misc">
+                    <div class="table">
+                        <p>Цена:</p>                <p>1</p>
+                        <p>Макс. улучшений:</p>     <p>3</p>
+                        <p>Макс. ул. скорости:</p>  <p>0</p>
+                        <p>Макс. ул. мощи:</p>      <p>3</p>
+                        <p>Перезарядка:</p>         <p>50</p>
+                        <p>Нужен костюм:</p>        <p class="no">нет</p>
+                    </div>
+                </div>
+            </div>
+            <div class="class"><img src="images/spells/spellbooks/standard.png"></div>
+        </div>
+        <div class="spell standard" id="blink">
+            <div>
+                <div class="header">
+                    <img class="icon" src="images/spells/blink.png">
+                    <div class="tabs">
+                        <button class="tab active" onclick="showTab('blink', 'blink-desc')">Desc</button>
+                        <button class="tab" onclick="showTab('blink', 'blink-perks')">Perks</button>
+                        <button class="tab" onclick="showTab('blink', 'blink-misc')">Misc</button>
+                    </div>
+                </div>
+                <h3>Blink</h3>
+                <div id="blink-desc" class="tabcontent desc">
+                    <p>
+                        Низшая форма телепортаций. Случайно перемещает на короткую дистанцию.
+                    </p>
+                </div>
+                <div id="blink-perks" class="tabcontent perks">
+                    <p>
+                        Расширяет зону действия заклинания на 1 тайл.
+                    </p>
+                </div>
+                <div id="blink-misc" class="tabcontent misc">
+                    <div class="table">
+                        <p>Цена:</p>                <p>1</p>
+                        <p>Макс. улучшений:</p>     <p>4</p>
+                        <p>Макс. ул. скорости:</p>  <p>3</p>
+                        <p>Макс. ул. мощи:</p>      <p>4</p>
+                        <p>Перезарядка:</p>         <p>2 (↓0.5)</p>
+                        <p>Нужен костюм:</p>        <p class="no">нет</p>
+                    </div>
+                </div>
+            </div>
+            <div class="class"><img src="images/spells/spellbooks/standard.png"></div>
+        </div>
     </div>
     <div id="filter">
-        <img id="onyx" src="onyxlogo.png">
+        <button id="logo" onclick="switchAll()">
+            <img id="onyx" src="onyxlogo.png">
+        </button>
         <div id="buttons">
             <button id="b-standard" class="active" onclick="filterOut('standard')">
                 <img src="images/spells/spellbooks/standard.png">
