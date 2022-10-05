@@ -72,7 +72,7 @@ img {
     height: 300px;
     background-color: var(--background3);
     padding: 0 10px;
-    margin: 20px;
+    margin: 10px;
     border-radius: 30px 6px 6px 6px;
     display: none;
     flex-direction: column;
@@ -174,7 +174,7 @@ img {
     justify-content: space-between;
     align-items: center;
     gap: 15px;
-    width: 60%;
+    width: 95%;
     margin-bottom: 15px;
 }
 
@@ -184,6 +184,7 @@ img {
     width: 80px;
     height: 80px;
     border-radius: 6px;
+    margin: auto;
 }
 
 #buttons .active {
@@ -208,14 +209,21 @@ img {
 .hideAll:hover {
     background-color: var(--foreground1);
 }
-
+ 
 .hideAll:active {
     background-color: var(--foreground2);
+}
+
+@media screen and (max-width: 900px) {
+    #buttons {
+        width: 95%;
+    }
 }
 
 @media screen and (max-width: 480px) {
     #book {
         width: 75%;
+        gap: 5px;
     }
 
     #filter {
@@ -239,4 +247,28 @@ img {
         width: 60px;
         height: 60px;
     }
-  }
+}
+
+@media screen and (max-width: 280px) {
+    p {
+        font-size: 12px;
+    }
+
+    .class img {
+        width: 24px;
+    }
+
+    .tab {
+        width: 30px;
+    }
+
+    #buttons button {
+        width: 50px;
+        height: 50px;
+    }
+    
+    #buttons button p {
+        font-size: 0;
+    }
+
+}
