@@ -17,4 +17,110 @@ function showTab(spell, tabName) {
     // Show the current tab, and add an "active" class to the button that opened the tab
     document.getElementById(tabName).style.setProperty("display", "block");
     event.target.className += " active";
+}
+
+let warlock = true;
+let cleric = true;
+let standard = true;
+let battlemage = true;
+let druid = true;
+let spatial = true;
+
+function filterOut(book) {
+  switchButton(book);
+  switch (book) {
+    case 'warlock':
+      if (warlock) {
+        warlock = false;
+      } else {
+        warlock = true;
+      }
+      break;
+    case 'cleric':
+      if (cleric) {
+        cleric = false;
+      } else {
+        cleric = true;
+      }
+      break;
+    case 'standard':
+      if (standard) {
+        standard = false;
+      } else {
+        standard = true;
+      }
+      break;
+    case 'battlemage':
+      if (battlemage) {
+        battlemage = false;
+      } else {
+        battlemage = true;
+      }
+      break;
+    case 'druid':
+      if (druid) {
+        druid = false;
+      } else {
+        druid = true;
+      }
+      break;
+    case 'spatial':
+      if (spatial) {
+        spatial = false;
+      } else {
+        spatial = true;
+      }
+      break;
   }
+  updateBook();
+}
+
+function switchButton(id) {
+  theButton = document.getElementById('b-' + id);
+  if (theButton.className.indexOf('active') > -1) {
+    theButton.className = theButton.className.replace("active", "");
+  } else {
+    theButton.className += "active";
+  }
+}
+
+// function filterSelection(c) {
+//   var x, i;
+//   x = document.getElementsByClassName("spell");
+//   if (c == "all") {
+//     c = "";
+//   }
+//   for (i = 0; i < x.length; i++) {
+//     hideSpell(x[i]);
+//     if (x[i].className.indexOf(c) > -1) {
+//       showSpell(x[i]);
+//     }
+//   }
+// }
+
+function updateBook() {
+  let x, i;
+  x = document.getElementsByClassName('spell');
+  for (i = 0; i < x.length; i++) {
+    hideSpell(x[i]);
+  }
+  for (i = 0; i < x.length; i++) {
+    if ((contains(x[i], 'standard') && standard) || (contains(x[i], 'cleric') && cleric) || (contains(x[i], 'warlock') && warlock) || (contains(x[i], 'battlemage') && battlemage) || (contains(x[i], 'druid') && druid) || (contains(x[i], 'spatial') && spatial)) {
+      showSpell(x[i]);
+    }
+  }
+}
+
+function hideSpell(element) {
+  element.className = element.className.replace(" show", "");
+}
+
+function showSpell(element) {
+  element.className += " show";
+}
+
+function contains(element, book) {
+  return element.classList.contains(book);
+}
+
+updateBook();

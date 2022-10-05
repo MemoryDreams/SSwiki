@@ -6,12 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="spellbook.css">
     <link rel="icon" href="onyxlogo.png">
-    <script src="spellbook.js"></script>
+    <script src="spellbook.js" defer></script>
     <title>Spellbook</title>
 </head>
 <body>
     <div id="book">
-        <div class="spell" id="bloodshard">
+        <div class="spell warlock" id="bloodshard">
             <div>
                 <div class="header">
                     <img class="icon" src="images/spells/bloodshard.png">
@@ -41,7 +41,7 @@
             </div>
             <div class="Warlock"><img src="images/spells/spellbooks/warlock.gif"></div>
         </div>
-        <div class="spell" id="magicmissile">
+        <div class="spell warlock" id="magicmissile">
             <div>
                 <div class="header">
                     <img class="icon" src="images/spells/magicmissile.png">
@@ -65,11 +65,72 @@
                         <p>Макс. ул. скорости:</p><p>2</p>
                         <p>Макс. ул. мощи:</p><p>3</p>
                         <p>Перезарядка:</p><p>15 (↓9)</p>
-                        <p>Нужен костюм:</p><p сlass="no">да</p>
+                        <p>Нужен костюм:</p><p сlass="yes">да</p>
                     </div>
                 </div>
             </div>
-            <div class="Warlock"><img src="images/spells/spellbooks/warlock.gif"></div>
+            <div class="class"><img src="images/spells/spellbooks/warlock.gif"></div>
+        </div>
+        <div class="spell warlock standard" id="acidspray">
+            <div>
+                <div class="header">
+                    <img class="icon" src="images/spells/acidspray.png">
+                    <div class="tabs">
+                        <button class="tab active" onclick="showTab('acidspray', 'acidspray-desc')">Desc</button>
+                        <!-- <button class="tab" onclick="showTab('acidspray', 'acidspray-perks')">Perks</button> -->
+                        <button class="tab" onclick="showTab('acidspray', 'acidspray-misc')">Misc</button>
+                    </div>
+                </div>
+                <h3>Acid Spray</h3>
+                <div id="acidspray-desc" class="tabcontent desc">
+                    <p>Распыляет кислоту в трёх направлениях перед вами. Она обжигает кожу, плавит одежду и предметы на которые попадёт. (Осторожно! Поток кислоты двигается медленнее вашего персонажа, а значит можно попасть в себя!)</p>
+                </div>
+                <!-- <div id="acidspray-perks" class="tabcontent perks">
+                    <p></p>
+                </div> -->
+                <div id="acidspray-misc" class="tabcontent misc">
+                    <div class="table">
+                        <p>Цена:</p><p>1</p>
+                        <p>Макс. улучшений:</p><p>0</p>
+                        <p>Макс. ул. скорости:</p><p>0</p>
+                        <p>Макс. ул. мощи:</p><p>0</p>
+                        <p>Перезарядка:</p><p>60</p>
+                        <p>Нужен костюм:</p><p сlass="no">нет</p>
+                    </div>
+                </div>
+            </div>
+            <div class="class">
+                <img src="images/spells/spellbooks/warlock.gif"><img src="images/spells/spellbooks/standard.png">
+            </div>
+        </div>
+    </div>
+    <div id="filter">
+        <img id="onyx" src="onyxlogo.png">
+        <div id="buttons">
+            <button id="b-standard" class="active" onclick="filterOut('standard')">
+                <img src="images/spells/spellbooks/standard.png">
+                <p>Standard</p>
+            </button>
+            <button id="b-warlock" class="active" onclick="filterOut('warlock')">
+                <img src="images/spells/spellbooks/warlock.gif">
+                <p>Warlock</p>
+            </button>
+            <button id="b-cleric" class="active" onclick="filterOut('cleric')">
+                <img src="images/spells/spellbooks/cleric.png">
+                <p>Cleric</p>
+            </button>
+            <button id="b-spatial" class="active" onclick="filterOut('spatial')">
+                <img src="images/spells/spellbooks/spatial.gif">
+                <p>Spatial</p>
+            </button>
+            <button id="b-druid" class="active" onclick="filterOut('druid')">
+                <img src="images/spells/spellbooks/druid.gif">
+                <p>Druid</p>
+            </button>
+            <button id="b-battlemage" class="active" onclick="filterOut('battlemage')">
+                <img src="images/spells/spellbooks/battlemage.gif">
+                <p>Battlemage</p>
+            </button>
         </div>
     </div>
 </body>

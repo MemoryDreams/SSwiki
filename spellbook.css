@@ -5,7 +5,17 @@
     --background4: #27226b;
     --foreground1: #434aa6;
     --foreground2: #5a66b3;
+    --yes: #74bf85;
+    --no: #ff7485;
     --font: #afb8dd;
+}
+
+.yes {
+    color: var(--yes);
+}
+
+.no {
+    color: var(--no);
 }
 
 *, ::before, ::after {
@@ -18,7 +28,10 @@ p, h3, a, button {
 }
 
 body {
-    background: linear-gradient(90deg, var(--background2), var(--background3));
+    background: linear-gradient(90deg, var(--background1), var(--background2));
+    display: flex;
+    height: 100vh;
+    width: 100vw;
 }
 
 img {
@@ -35,18 +48,25 @@ img {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    gap: 20px;
+    justify-content: space-around;
+    gap: 5px;
+    width: 75%;
+    height: 100%;
 }
 
 .spell {
     width: 250px;
-    height: 250px;
-    background-color: var(--background1);
+    height: 300px;
+    background-color: var(--background3);
     padding: 0 10px;
-    margin: 30px;
-    display: flex;
+    margin: 20px;
+    border-radius: 3px;
+    display: none;
     flex-direction: column;
     justify-content: space-between;
+    -webkit-box-shadow: -16px 18px 29px 9px rgba(0,0,0,0.75);
+    -moz-box-shadow: -16px 18px 29px 9px rgba(0,0,0,0.75);
+    box-shadow: -16px 18px 29px 9px rgba(0,0,0,0.75);
 }
 
 .spell h3, .tabcontent {
@@ -86,7 +106,7 @@ img {
     background-color: var(--foreground1);
 }
 
-.tab.active {
+.tab .active {
     background-color: var(--foreground2);
 }
 
@@ -103,6 +123,47 @@ img {
     grid-template-columns: 1.7fr 1fr;
 }
 
-.class {
-    justify-self: flex-end;
+#filter {
+    position: fixed;
+    right: 0;
+    background-color: var(--background3);
+    height: 100%;
+    width: 25vw;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    -webkit-box-shadow: -15px 2px 30px 4px rgba(0,0,0,0.75);
+    -moz-box-shadow: -15px 2px 30px 4px rgba(0,0,0,0.75);
+    box-shadow: -15px 2px 30px 4px rgba(0,0,0,0.75);
+}
+
+#onyx {
+    width: 100px;
+    height: 100px;
+    padding: 20px;
+}
+
+.show {
+    display: flex;
+}
+
+#buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 60%;
+}
+
+#buttons button {
+    background-color: var(--background4);
+    border: none;
+    width: 80px;
+    height: 80px;
+    margin: 10px;
+}
+
+#buttons .active {
+    background-color: var(--foreground2);
 }
