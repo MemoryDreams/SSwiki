@@ -7,6 +7,7 @@ function showTab(spell, tabName) {
     for (i = 0; i < tabcontent.length; i++) {
       tabcontent[i].style.display = "none";
     }
+    console.log(i);
   
     // Get all elements with class="tablinks" and remove the class "active"
     tablinks = document.getElementById(spell).getElementsByClassName("tab");

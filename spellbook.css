@@ -80,6 +80,8 @@ img {
     -webkit-box-shadow: -16px 18px 29px 9px rgba(0,0,0,0.75);
     -moz-box-shadow: -16px 18px 29px 9px rgba(0,0,0,0.75);
     box-shadow: -16px 18px 29px 9px rgba(0,0,0,0.75);
+    border-bottom: 1px solid var(--foreground1);
+    border-right: 1px solid var(--foreground1);
 }
 
 .spell h3, .tabcontent {
@@ -128,13 +130,33 @@ img {
     text-align: justify;
 }
 
-.perks, .misc {
+.perks, .misc, .price {
     display: none;
 }
 
 .table {
     display: grid;
     grid-template-columns: 1.7fr 1fr;
+}
+
+.pricetable {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.pricetable div {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    background: linear-gradient(130deg, var(--background2), var(--background1));
+    border-radius: 5px;
+    border-top: 1px solid var(--foreground1);
+    border-left: 1px solid var(--foreground1);
+}
+
+.pricetable div * {
+    padding: 5px;
 }
 
 .class {
