@@ -147,25 +147,25 @@ a img {
 }
 
 .star1 {
-    background-image: url(images/stars/starsky-1.png);
+    background-image: url(images/stars/starsky-1.gif);
     animation: slide 3s linear infinite;
     z-index: 0;
 }
 
 .star2 {
-    background-image: url(images/stars/starsky-2.png);
+    background-image: url(images/stars/starsky-2.gif);
     animation: slide 4s linear infinite;
     z-index: -1;
 }
 
 .star3 {
-    background-image: url(images/stars/starsky-3.png);
+    background-image: url(images/stars/starsky-3.gif);
     animation: slide 5s linear infinite;
     z-index: -2;
 }
 
 .star4 {
-    background-image: url(images/stars/starsky-4.png);
+    background-image: url(images/stars/starsky-4.gif);
     animation: slide 6s linear infinite;
     z-index: -3;
 }
