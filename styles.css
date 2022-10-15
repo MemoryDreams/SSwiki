@@ -1,13 +1,11 @@
 :root {
     --logowidth: 50px;
-    --darkback: #141016;
-    --darkblck: #13032c;
-    --darkblue: #1f1a35;
-    --lightblue: #555668;
-    --lighterblue: #6f7088;
-    --fontondark: #D2D7E0;
-    --lightback: #F0EAD6;
-    --darkerback: #e5dad6;
+    --back-1:rgb(16, 15, 30);
+    --back1:rgb(34, 32, 52);
+    --back2:rgb(59, 57, 80);
+    --back3:rgb(83, 81, 112);
+    --front1:rgb(203, 219, 252);
+    --front2:rgb(132, 126, 135);
     --header: 50px;
 }
 
@@ -17,100 +15,90 @@
 }
 
 body {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
-
-#header {
-    background: linear-gradient(var(--darkback), var(--darkblck));
-    height: var(--header);
     width: 100vw;
-    position: fixed;
-    top: 0;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    box-shadow: 1px 1px 6px;
-} 
-
-#header * {
-    padding: 5px;
+    height: 100vh;
+    background: linear-gradient(90deg, var(--back-1), var(--back2));
+    overflow: hidden;
 }
 
-.left-side {
-    display: flex;
-    align-items: center;
-}
-
-.right-side {
-    margin: 15px;
-}
-
-#search-bar {
-    justify-content: center;
-    align-items: center;
-    gap: 5px;
-}
-
-#search {
-    width: 50vw;
-}
-
-.logo { 
-    object-fit: cover;
-    object-position: 50% 15%;
-    width: 45px;
-}
-
-img {
-    image-rendering: optimizeSpeed;             /* STOP SMOOTHING, GIVE ME SPEED  */
-    image-rendering: -moz-crisp-edges;          /* Firefox                        */
-    image-rendering: -o-crisp-edges;            /* Opera                          */
-    image-rendering: -webkit-optimize-contrast; /* Chrome (and eventually Safari) */
-    image-rendering: pixelated;                 /* Chrome                         */
-    image-rendering: optimize-contrast;         /* CSS3 Proposed                  */
-    -ms-interpolation-mode: nearest-neighbor;
-}
-
-#header a {
-    text-decoration: none;
-    color: var(--fontondark);
-    font-weight: bolder;
-}
-
-#header a:hover {
-    color: var(--lightback);
-}
-
-#main {
-    background-color: var(--lightback);
+#mainpart {
+    position: absolute;
     width: 100%;
-    min-height: 100vh;
     height: 100%;
-    margin-top: var(--header);
-    padding: 25px;
-    text-align: justify;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-button {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
-
-.button {
+#spaceship {
+    position: fixed;
     width: 200px;
-    height: 50px;
-    border: 1px solid var(--darkblck);
-    background: linear-gradient(var(--darkerback), var(--darkback));
-    color: var(--fontondark);
-    border-radius: 4px;
-    text-decoration: none;
+    height: 200px;
+    background-color: var(--back-1);
+    z-index: 5;
 }
 
-.button:hover {
-    border: 1px solid var(--darkerback);
+#background {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
 }
 
-.button:active {
-    background-color: var(--fontondark);
-    color: var(--darkblck);
+.sky {
+    position: absolute;
+    width: 150%;
+    height: 100%;
+    z-index: 1;
 }
+
+.star1 {
+    background-image: url(images/stars/starsky-1.png);
+    animation: slide 3s linear infinite;
+    z-index: 0;
+}
+
+.star2 {
+    background-image: url(images/stars/starsky-2.png);
+    animation: slide 4s linear infinite;
+    z-index: -1;
+}
+
+.star3 {
+    background-image: url(images/stars/starsky-3.png);
+    animation: slide 5s linear infinite;
+    z-index: -2;
+}
+
+.star4 {
+    background-image: url(images/stars/starsky-4.png);
+    animation: slide 6s linear infinite;
+    z-index: -3;
+}
+
+.star5 {
+    background-image: url(images/stars/starsky-5.png);
+    animation: slide 7s linear infinite;
+    z-index: -4;
+}
+
+/* @keyframes star-fly {
+    from {
+      transform: translateX(0vw);
+    }
+  
+    to {
+      transform: translateX(100vw);
+    }
+} */
+
+@keyframes slide {
+    0% {
+      transform: translate(0);
+    }
+    100% {
+      transform: translate(-128px); /* The image width */
+    }
+  }
