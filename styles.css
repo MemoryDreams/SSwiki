@@ -118,6 +118,10 @@ a img {
     justify-content: center;
 }
 
+#searchbar button:hover {
+    background-color: var(--foreground2);
+}
+
 #setilite {
     position: sticky;
     width: 64px;
