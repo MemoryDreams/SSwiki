@@ -120,10 +120,10 @@ a img {
 
 #setilite {
     position: sticky;
-    width: 32px;
-    height: 32px;
+    width: 64px;
+    height: 64px;
     z-index: 2;
-    margin-right: -32px;
+    margin-right: -64px;
 }
 
 #background {
@@ -174,7 +174,7 @@ a img {
 
 #assistant {
     position:absolute;
-    animation: assistant-flying 30s linear infinite alternate;
+    animation: assistant-flying 60s linear infinite alternate;
     z-index: 1;
 }
 
@@ -194,15 +194,5 @@ a img {
     }
     100% {
       transform: translate(-128px); /* The image width */
-    }
-  }
-
-  @keyframes extinguisher-flying {
-    from {
-      transform: translateY(45vh) translateX(150vw) rotateZ(360deg);
-    }
-  
-    to {
-      transform: translateY(300px) translateX(-350px) rotateZ(0deg);
     }
   }
