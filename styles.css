@@ -1,11 +1,11 @@
 :root {
     --logowidth: 50px;
-    --background1:rgb(16, 15, 30);
-    --background2:rgb(34, 32, 52);
-    --background3:rgb(59, 57, 80);
-    --background4:rgb(83, 81, 112);
-    --foreground1:rgb(104, 103, 135);
-    --foreground2:rgb(123, 120, 151);
+    --background1:rgb(11, 10, 18);
+    --background2:rgb(37, 35, 50);
+    --background3:rgb(49, 48, 58);
+    --background4:rgb(79, 78, 92);
+    --foreground1:rgb(103, 103, 119);
+    --foreground2:rgb(116, 115, 129);
     --header: 50px;
     --font: #bfc8ed;
 }
@@ -31,7 +31,7 @@ img {
 body {
     width: 100vw;
     height: 100vh;
-    background: linear-gradient(90deg, var(--background1), var(--background3));
+    background: linear-gradient(90deg, var(--background1), var(--background2));
     overflow: hidden;
 }
 
