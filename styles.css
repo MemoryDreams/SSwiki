@@ -28,11 +28,15 @@ img {
     pointer-events: none;
 }
 
-body {
+#wrapper {
+    position: relative;
     width: 100vw;
     height: 100vh;
+    overflow-x: hidden;
+}
+
+body {
     background: linear-gradient(90deg, var(--background1), var(--background2));
-    overflow: hidden;
 }
 
 #mainpart {
@@ -129,6 +133,7 @@ a img {
     height: 64px;
     z-index: 2;
     margin-right: -64px;
+    align-self: center;
 }
 
 #background {
@@ -156,7 +161,6 @@ a img {
     width: 150%;
     height: 100%;
     z-index: 1;
-    overflow: hidden;
 }
 
 .star1 {
@@ -213,3 +217,11 @@ a img {
       transform: translate(-128px); /* The image width */
     }
   }
+
+@media screen and (max-width: 500px) {
+    #setilite {
+        width: 32px;
+        height: 32px;
+        margin-right: -32px;
+    }
+}
