@@ -1,7 +1,8 @@
 :root {
     --logowidth: 50px;
-    --background1:rgb(11, 10, 18);
-    --background2:rgb(37, 35, 50);
+    --background1:rgb(5, 5, 10);
+    --backgroundspecial: rgb(32,30,36);
+    --background2:rgb(27, 15, 10);
     --background3:rgb(49, 48, 58);
     --background4:rgb(79, 78, 92);
     --foreground1:rgb(103, 103, 119);

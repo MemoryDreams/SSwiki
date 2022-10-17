@@ -3,7 +3,7 @@
 
 #spaceship {
     position: fixed;
-    background-color: var(--background1);
+    background-color: var(--backgroundspecial);
     z-index: 5;
     width: 300px;
     border-radius: 15px;
