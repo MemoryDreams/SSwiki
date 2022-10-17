@@ -4,6 +4,8 @@
     --screen: #66c1b9;
     --stripe: rgba(10,10,10,0.1);
     --screenfont: #313131;
+    --screenwidth: 600px;
+    --screenheight: 360px;
 }
 
 #content {
@@ -11,7 +13,7 @@
     right: 0;
     width: 90%;
     height: 90%;
-    background-color: var(--background2);
+    background-color: var(--backgroundspecial);
     z-index: 5;
     border-right: 2px solid var(--background4);
     border-radius: 15px;
@@ -48,8 +50,8 @@ header {
     border-bottom: 1px solid var(--background4);
     border-right: 1px solid var(--background4);
     border-radius: 15px;
-    width: 600px;
-    height: 360px;
+    width: var(--screenwidth);
+    height: var(--screenheight);
 }
 
 #screenitself {
@@ -81,7 +83,12 @@ header {
 }
 
 #controlpanel {
+    max-width: var(--screenwidth);
     align-self: center;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
 }
 
 #controlpanel button {
@@ -89,15 +96,23 @@ header {
     outline: none;
     background-color: var(--background3);
     font-weight: 900;
-    width: 200px;
-    height: 80px;
+    width: 30%;
     border-right: 1px solid var(--background4);
     border-bottom: 1px solid var(--background4);
     border-radius: 15px;
+    padding: 15px;
+    margin: 15px 0;
 }
 
 #controlpanel button:hover {
     background-color: var(--background4);
+}
+
+#controlpanel button:active {
+    background-color: var(--background2);
+    border: none;
+    border-left: 1px solid var(--background4);
+    border-top: 1px solid var(--background4);
 }
 
 @keyframes stripeflow {
@@ -118,5 +133,36 @@ header {
             transparent 2px,
             transparent 4px
           );
+    }
+}
+
+@media screen and (max-width: 700px) {
+    #screenborder {
+        margin-top: 23px;
+        max-width: 96%;
+    }
+
+    button {
+        max-width: 40%;
+    }
+
+    header a img {
+        width: 32px;
+        height: 32px;
+    }
+}
+
+@media screen and (min-width: 1900px) {
+    :root {
+        --screenwidth: 1200px;
+        --screenheight: 730px;
+    }
+
+    #controlpanel {
+        gap: 30px;
+    }
+
+    * {
+        font-size: 36px;
     }
 }

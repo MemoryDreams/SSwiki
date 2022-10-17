@@ -70,11 +70,12 @@ a img {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    height: 40px;
+    height: 60px;
 }
 
 #searchbar input {
-    width: 80%;
+    width: 70%;
+    padding: 5px;
 }
 
 #searchbar button, #searchbar input {
@@ -88,7 +89,8 @@ a img {
 }
 
 #searchbar button {
-    width: 40px;
+    width: 50px;
+    height: 50px; 
     display: flex;
     align-items: center;
     justify-content: center;
@@ -137,5 +139,32 @@ a img {
         width: 32px;
         height: 32px;
         margin-right: -32px;
+    }
+}
+
+@media screen and (min-width: 1500px) {
+    #spaceship {
+        width: 500px;
+    }
+
+    #welcome {
+        height: 200px;
+    }
+
+    .floor {
+        height: 140px;
+    }
+
+    a img {
+        width: 98px;
+        height: 98px;
+    }
+
+    a p {
+        font-size: 23px;
+    }
+
+    #searchbar {
+        height: 80px;
     }
 }
