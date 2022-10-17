@@ -33,7 +33,7 @@ img {
     position: relative;
     width: 100vw;
     height: 100vh;
-    overflow-x: hidden;
+    overflow: hidden;
 }
 
 body {
@@ -79,12 +79,6 @@ body {
     background-image: url(images/stars/starsky-4.gif);
     animation: slide 6s linear infinite;
     z-index: -3;
-}
-
-.star5 {
-    background-image: url(images/stars/starsky-5.png);
-    animation: slide 7s linear infinite;
-    z-index: -4;
 }
 
 #assistant {
