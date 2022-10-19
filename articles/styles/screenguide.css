@@ -42,6 +42,7 @@ header {
 }
 
 #screenborder {
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -88,7 +89,7 @@ header {
 }
 
 #controlpanel {
-    max-width: var(--screenwidth);
+    width: var(--screenwidth);
     align-self: center;
     display: flex;
     flex-wrap: wrap;
@@ -96,12 +97,14 @@ header {
     justify-content: space-between;
 }
 
-#controlpanel button {
+.answer {
     border: none;
     outline: none;
     background-color: var(--background3);
     font-weight: 900;
     width: 30%;
+    min-width: 200px;
+    min-height: 70px;
     border-right: 1px solid var(--background4);
     border-bottom: 1px solid var(--background4);
     border-radius: 15px;
@@ -109,11 +112,11 @@ header {
     margin: 15px 0;
 }
 
-#controlpanel button:hover {
+.answer:hover {
     background-color: var(--background4);
 }
 
-#controlpanel button:active {
+.answer:active {
     background-color: var(--background1);
     border: none;
     border-left: 1px solid var(--background4);

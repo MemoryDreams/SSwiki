@@ -1,5 +1,6 @@
 let screentext = document.getElementById('screentext').innerHTML;
 let buttons = document.getElementsByClassName('answer');
+let controlpanel = document.getElementById('controlpanel');
 
 function installSwitcher(val) {
     switch (val) {
@@ -8,6 +9,9 @@ function installSwitcher(val) {
         case 'no':
             break;
     }
+    removeButtons();
+    addButton('that worked', 'yes');
+    addButton('that worked too', 'no');
 }
 
 function removeButtons() {
@@ -15,4 +19,16 @@ function removeButtons() {
     for (i = 0; i <= buttons.length; i++) {
         document.getElementById('controlpanel').querySelector('button').remove();
     }
+}
+
+function addButton(text, val) {
+    let button = document.createElement('button');
+    button.className = 'answer';
+    button.innerHTML = text;
+    button.setAttribute("onclick", "installSwitcher('" + val + "')");
+    controlpanel.appendChild(button);
+}
+
+function helpWithInstall() {
+
 }
