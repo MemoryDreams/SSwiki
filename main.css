@@ -17,9 +17,6 @@
     align-items: center;
     justify-content: center;
     background-color: var(--background3);
-    border-bottom: 1px solid var(--foreground1);
-    border-right: 1px solid var(--foreground1);
-    border-radius: 15px;
     gap: 10px;
 }
 
@@ -88,7 +85,6 @@ a img {
     border: none;
     border-bottom: 1px solid var(--foreground1);
     border-right: 1px solid var(--foreground1);
-    border-radius: 15px;
 }
 
 #searchbar button {
@@ -124,9 +120,6 @@ a img {
 
 #welcome {
     background-color: var(--background3);
-    border-radius: 15px;
-    border-bottom: 1px solid var(--foreground1);
-    border-right: 1px solid var(--foreground1);
     height: 110px;
     width: 100%;
     display: flex;
@@ -136,6 +129,12 @@ a img {
 
 #welcome img {
     width: 90%;
+}
+
+.border {
+    border-bottom: 1px solid var(--foreground1);
+    border-right: 1px solid var(--foreground1);
+    border-radius: 15px;
 }
 
 @media screen and (max-width: 500px) {
