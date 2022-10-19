@@ -6,39 +6,55 @@
     --screenfont: #313131;
     --screenwidth: 600px;
     --screenheight: 360px;
+    --iconheight: 64px;
+    --borderradius: 15px;
 }
 
 #content {
     position: relative;
     right: 0;
-    width: 90%;
+    width: calc(var(--screenwidth) + 2%) ;
     height: 90%;
     background-color: var(--backgroundspecial);
     z-index: 5;
     border-right: 2px solid var(--background4);
-    border-radius: 15px;
+    border-radius: var(--borderradius);
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    justify-content: space-between;
 }
 
-header a {
+#back {
     position: absolute;
     border-radius: 50%;
     overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-header a, header a img {
-    width: 64px;
-    height: 64px;
+#back, #back img {
+    width: var(--iconheight);
+    height: var(--iconheight);
 }
 
-header a:hover {
+#back:hover {
     background-color: var(--foreground2);
 }
 
 header {
+    display: flex;
+    width: 100%;
+    height: var(--iconheight);
     padding: 10px;
+    align-items: center;
+}
+
+#soundbooster {
+    margin: auto;
+    width: 30%;
+    height: 2px;
+    background-color: var(--font);
 }
 
 #screenborder {
@@ -50,7 +66,7 @@ header {
     background-color: var(--background3);
     border-bottom: 1px solid var(--background4);
     border-right: 1px solid var(--background4);
-    border-radius: 15px;
+    border-radius: var(--borderradius);
     width: var(--screenwidth);
     height: var(--screenheight);
 }
@@ -77,6 +93,7 @@ header {
 
 #stripes h3 {
     position: relative;
+    width: 90%;
     z-index: 3;
     color: var(--screenfont);
     text-align: center;
@@ -102,14 +119,22 @@ header {
     outline: none;
     background-color: var(--background3);
     font-weight: 900;
-    width: 30%;
-    min-width: 200px;
-    min-height: 70px;
+    width: 200px;
+    height: 80px;
     border-right: 1px solid var(--background4);
     border-bottom: 1px solid var(--background4);
-    border-radius: 15px;
+    border-radius: var(--borderradius);
     padding: 15px;
     margin: 15px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.answer img {
+    width: var(--iconheight);
+    height: var(--iconheight);
 }
 
 .answer:hover {
@@ -145,18 +170,18 @@ header {
 }
 
 @media screen and (max-width: 700px) {
+    :root {
+        --screenwidth: 95%;
+        --screenheight: 400px;
+        --iconheight: 32px;
+    }
+
     #screenborder {
-        margin-top: 23px;
         max-width: 96%;
     }
 
-    button {
-        max-width: 40%;
-    }
-
-    header a img {
-        width: 32px;
-        height: 32px;
+    .answer {
+        width: 40%;
     }
 }
 
@@ -164,6 +189,8 @@ header {
     :root {
         --screenwidth: 1200px;
         --screenheight: 730px;
+        --iconheight: 128px;
+        --borderradius: 30px;
     }
 
     #controlpanel {
@@ -172,5 +199,14 @@ header {
 
     * {
         font-size: 36px;
+    }
+
+    .answer {
+        width: 400px;
+        height: 180px;
+    }
+
+    .answer h3 {
+        font-size: 35px;
     }
 }

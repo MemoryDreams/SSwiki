@@ -22,13 +22,13 @@
         <div id="mainpart">
             <div id="content">
                 <header>
-                    <a href="../index.html"><img src="../images/onyxlogo.png"></a>
+                    <a id="back" href="../index.html"><img src="../images/onyxlogo.png"></a>
+                    <div id="soundbooster"></div>
                 </header>
                 <div id="screenborder">
                     <div id="screenitself">
                         <div id="stripes">
                             <h3 id="screentext">
-                                <br><br>
                                 Чтобы играть в Space Station 13, вам нужно установить Byond и завести аккаунт на сайте проекта.<br><br>
                                 Это уже сделано? (y/n)
                             </h3>
@@ -36,10 +36,10 @@
                     </div>
                 </div>
                 <div id="controlpanel">
-                    <button onclick="installSwitcher('yes')" class="answer">
+                    <button onclick="letsBegin()" class="answer">
                         Да, у меня уже всё готово.
                     </button>
-                    <button onclick="installSwitcher('no')" class="answer">
+                    <button onclick="helpWithInstall()" class="answer">
                         Нет, нужна помощь с этим.
                     </button>
                 </div>
